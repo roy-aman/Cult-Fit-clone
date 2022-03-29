@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap");
+
+/* fonts taken from cult-fit official  */
+@font-face {
+  font-family: "BrandonTextWeb-Medium";
+  font-display: swap;
+  src: url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.eot");
+  src: url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.woff2")
+      format("woff2"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.woff") format("woff"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "BrandonTextWeb-Regular";
+  font-display: swap;
+  src: url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.eot");
+  src: url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.woff2")
+      format("woff2"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.woff") format("woff"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "BrandonTextWeb-Bold";
+  font-display: swap;
+  src: url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.eot");
+  src: url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.woff2")
+      format("woff2"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.woff") format("woff"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.ttf")
+      format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "BrandonTextWeb-Regular";
+}
+
+/* navbar styles  */
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #15171c;
+}
+
+header > nav {
+  display: flex;
+  width: 96%;
+  height: 100%;
+  margin: auto;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > nav > .navbar_logo > img {
+  width: 120px;
+  height: 30px;
+}
+
+header > nav > .middle_nav_links {
+  display: flex;
+  font-size: 18px;
+  margin-left: 60px;
+}
+
+header > nav > .middle_nav_links > div > a {
+  color: #fff;
+  padding: 0px 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: "Inter", sans-serif;
+  opacity: 70%;
+  transition: opacity 0.25s ease;
+}
+header > nav > .middle_nav_links > div > a:hover {
+  opacity: 90%;
+}
+
+header > nav > .right_nav_links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+header > nav > .right_nav_links > div {
+  cursor: pointer;
+}
+
+header > nav > .right_nav_links > div > img {
+  height: 26px;
+  width: 26px;
+}
+
+header > nav > .right_nav_links > div:nth-child(1) {
+  padding: 8px 18px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+  color: rgb(255 255 255 / 60%);
+}
+
+header > nav > .right_nav_links > div:nth-child(1) > img {
+  margin-left: 10px;
+}
+
+header > nav > .right_nav_links > div:nth-child(1):hover {
+  background-color: rgb(255 255 255 / 10%);
+}
+
+header > nav > .right_nav_links > div:nth-child(2) {
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  transition: all 250ms ease;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-weight: 600;
+}
+
+header > nav > .right_nav_links > div:nth-child(2):hover {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+header > nav > .right_nav_links > div:nth-child(3),
+header > nav > .right_nav_links > div:nth-child(4) {
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 100ms ease;
+}
+
+header > nav > .right_nav_links > div:nth-child(3):hover,
+header > nav > .right_nav_links > div:nth-child(4):hover {
+  background-color: rgb(255 255 255 / 10%);
+}
+
+header > nav > .right_nav_links > div:nth-child(4) > img {
+  width: 22px;
+  height: 22px;
+}
+
+/* home section styles  */
+
+main {
+  width: 80%;
+  margin: auto;
+  height: 90vh;
+  display: grid;
+  place-items: center;
+}
+
+main > #home_section {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+}
+main > #home_section > .left_home {
+  width: 34%;
+  padding-right: 10px;
+}
+
+main > #home_section > .left_home > .title_first,
+main > #home_section > .left_home > .title_last {
+  font-size: 50px;
+  font-family: BrandonTextWeb-Bold, Helvetica Neue, Helvetica, Roboto, Arial,
+    sans-serif;
+}
+main > #home_section > .left_home > .title_first > .animated_span {
+  position: relative;
+  display: inline;
+  padding-left: 6px;
+}
+main > #home_section > .left_home > .title_first > .animated_span > span {
+  animation: animate_span 7.5s linear infinite 0s;
+  color: #00abe9;
+  font-family: BrandonTextWeb-Bold, Helvetica Neue, Helvetica, Roboto, Arial,
+    sans-serif;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+main
+  > #home_section
+  > .left_home
+  > .title_first
+  > .animated_span
+  > span:nth-child(2) {
+  animation-delay: 2.5s;
+}
+
+main
+  > #home_section
+  > .left_home
+  > .title_first
+  > .animated_span
+  > span:nth-child(3) {
+  animation-delay: 5s;
+}
+
+/* animation in main section  */
+
+@keyframes animate_span {
+  0% {
+    opacity: 0;
+  }
+
+  7.5% {
+    opacity: 0;
+    -webkit-transform: translateY(-40px);
+  }
+  15% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  40% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  49% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+main > #home_section > .left_home > .desc {
+  font-size: 18px;
+  position: relative;
+  color: #6e6d6d;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  width: 95%;
+  line-height: 40px;
+  font-family: BrandonTextWeb-Bold, Helvetica Neue, Helvetica, Roboto, Arial,
+    sans-serif;
+}
+main > #home_section > .right_home > div {
+  position: relative;
+}
+
+main > #home_section > .right_home > div > video {
+  border-radius: 10px;
+}
+
+main > #home_section > .right_home > div > .audio_icon > img {
+  position: relative;
+  top: -42px;
+  left: 94%;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  opacity: 60%;
+}
+main > #home_section > .right_home > div > .audio_icon > img:hover {
+  opacity: 100%;
+}
+
+/* cult section styling  */
+#cult_section {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#cult_section > .cult_container {
+  width: 80%;
+  margin: auto;
+}
+#cult_section > .cult_container > div {
+  margin-bottom: 8px;
+}
+
+#cult_section > .cult_container > div > img {
+  width: 90px;
+}
+
+#cult_section > .cult_container > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cult_section > .cult_container > div:nth-child(2) > p,
+#cult_section > .cult_container > div:nth-child(2) > a {
+  font-family: BrandonTextWeb-Bold, Helvetica Neue, Helvetica, Roboto, Arial,
+    sans-serif;
+  font-size: 20px;
+  color: #111;
+}
+
+#cult_section > .cult_container > div:nth-child(2) > a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#cult_section > .cult_container > div:nth-child(2) > a > span {
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#cult_section > .cult_container > div:nth-child(3) {
+  font-size: 14px;
+}
+
+#cult_section > .cult_container > #cult_image_section {
+  margin-top: 30px;
+  width: 100%;
+  overflow: hidden;
+  height: 430px;
+  border-radius: 10px;
+}
+
+#cult_section > .cult_container > #cult_image_section > ul {
+  display: flex;
+}
+#cult_section > .cult_container > #cult_image_section > ul > li {
+  position: relative;
+}
+
+#cult_section > .cult_container > #cult_image_section > ul > li > div {
+  position: absolute;
+  top: 8%;
+  left: 6%;
+  color: #fff;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+#cult_section > .cult_container > #cult_image_section > ul > li > img {
+  height: 70%;
+  object-fit: cover;
+  float: right;
+  object-position: 20%;
+  height: 34em;
+  position: relative;
+  object-fit: cover;
+  object-position: 80% 0;
+  max-width: 100%;
+}
+
+.cult_btn {
+  cursor: pointer;
+  padding: 5px 10px 5px 10px;
+  color: #ffff;
+  border: 1px solid white;
+  border-radius: 30px;
+  font-family: BrandonTextWeb-Bold, Helvetica Neue, Helvetica, Roboto, Arial,
+    sans-serif;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 12px;
+}
