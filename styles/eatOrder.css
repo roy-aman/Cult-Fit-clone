@@ -1,0 +1,108 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+#eatnavbar {
+   position: sticky;
+   background-color: #393a3b;
+   top: 0;
+   left: 0;
+   z-index: 5;
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
+
+#eatnavbar>div {
+   text-align: center;
+   height: 40px;
+   width: 100px;
+   padding: 5px 0;
+}
+
+#eatnavbar>div>a{
+   color: #fff;
+   text-decoration: none;
+   font-size: 18px;
+}
+
+
+/* slider and slider button */
+#eatOrderSliderButton {
+   display: flex;
+   height: 30px;
+   width: 60%;
+   margin: auto;
+   padding: 0 15px;
+   justify-content: space-between;
+}
+
+.sliderArrow {
+   width: 15px;
+   height: 15px;
+   padding-top: 5px;
+}
+
+.sliderdot{
+   width: 20px;
+   height: 20px;
+   padding-top: 5px;
+}
+
+/* fiberbar div */
+
+#eatFilterbar {
+   /* border: 1px solid red; */
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid gray;
+   width: 60%;
+   height: 50px;
+   padding: 10px;
+   margin: 60px auto 0;
+}
+
+#eatNow > select {
+   width: 300px;
+   height: 100%;
+   font-size: 18px;
+   background-color: #DBE5F5;
+}
+
+#eatFilter{
+   /* position: absolute; */
+   display: flex;
+   gap: 30px;
+}
+
+
+#eatFilter>div:first-child>p{
+   width: 50px;
+   height: 25px;
+   font-size: 14px;
+   color: gray;
+   margin-top: 5px;
+   text-align: center;
+   border: 1px solid gray;
+   background-color: #fff;
+}
+#eatFilter>div:last-child{
+   display: flex;
+   gap: 15px;
+}
+
+/* #eatFilter>div:last-child>img{
+   padding-right: 15px;
+} 
+#eatFilter>div:last-child>p {
+   padding-top: 5px; 
+   height: 30px; 
+}  */
+
+/* Item display */
+
+/* #eatItemContainer {
+   display: ;
+} */

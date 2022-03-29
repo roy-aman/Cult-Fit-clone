@@ -1,0 +1,56 @@
+
+const getfooddata = async(url) => {
+
+   let res = await fetch(url)
+   let data = await res.json()
+   // console.log(data.meals)
+   return data.meals
+}
+
+
+const appendfooddata = (data, parent) => {
+   parent.innerHTML = null
+   data.forEach(({strMeal, strMealThumb}) => {
+      let div = document.createElement(`div`)
+      div.setAttribute("id","fooditemdiv")
+
+      let title = document.createElement(`P`)
+      title.innerText = strMeal
+
+      let money = Math.floor(Math.random() * (250 - 100) + 100)
+      let origional = money + Math.floor(Math.random() * (50 - 25) + 25)
+
+      let bottomdiv = document.createElement(`div`)
+      bottomdiv.style.display = "grid"
+      bottomdiv.style.padding = "0 5px"
+      bottomdiv.style.gridTemplateColumns = "repeat(2,1fr)"
+
+      let starting = document.createElement(`div`)
+      starting.innerText = "Starting Price"
+
+      let strikedoffPrice = document.createElement(`div`)
+      strikedoffPrice.innerText = `₹` + origional + '/meal'
+      strikedoffPrice.style.textDecoration = 'line-through'
+      strikedoffPrice.style.textAlign = "right"
+      
+      let offer = document.createElement(`div`)
+      offer.innerText = "Offer Price"
+
+      let price = document.createElement(`div`)
+      price.innerText = `₹` + money + '/meal'
+      price.style.fontWeight = "bold"
+      price.style.textAlign = "right"
+
+      let image = document.createElement(`img`)
+      image.src = strMealThumb
+      image.style.width = "100%"
+      image.style.borderRadius = "5px"
+
+
+      bottomdiv.append(starting,strikedoffPrice,offer,price)
+      div.append(image,title,bottomdiv)
+      parent.append(div)
+   })
+}
+
+export {getfooddata , appendfooddata}
