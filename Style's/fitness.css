@@ -1,0 +1,48 @@
+#slideshow img{
+    height: 300px;
+    width: 100%;
+}
+#buttons_nav{
+    display: flex;
+    justify-content:center;
+    padding: 10px 0;
+}
+
+#buttons_nav button{
+    border-radius: 50%;
+    margin-left: 5px;
+    width: 10px;
+    height: 10px;
+    border: 0;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: rgba(0,0,0,.3);
+    margin: 0px 5px
+
+}
+
+
+/* -----------Offer------------------ */
+
+
+#offer{
+    background-color: rgb(236,236,236);
+    width: 80%;
+    margin: auto;
+    
+}
+#demo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    
+}
+#offer img{
+    width: 100%;
+    border-radius: 2%;
+}
