@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link data-rh="true" rel="icon" href="https://static.cure.fit/assets/images/favicon-modified.png" sizes="16x16"
+        type="image/png" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="m_styles/m_common.css">
+    <link rel="stylesheet" href="./m_styles/mind.css">
+    <title>
+        cult.fit - Health food | fitness | Meditation
+    </title>
+</head>
+
+<body>
+    <div id="m_head"> </div>
+
+    <div id="slid_show"> </div>
+
+    <div id="div1"> how can therapy help? <a>learn more </a></div>
+
+    <div id="div2">
+        <h1>EXPERTS TO HELP YOU </h1>
+        <div id="experts"></div>
+    </div>
+
+    <div id="div3">
+        <div>
+            <h3>ONLINE PSYCHIATRIST CONSULTATION</h3>
+            <P> > 25 Min Session > Mental Health Concerns > Medications If Needed</P>
+        </div>
+        <button> BOOK NOW </button>
+    </div>
+
+    <div id="div4">
+        <h1>ONLINE CONSULTATION</h1>
+        <hr>
+        <h3>Why Buy a Pack ?</h3>
+
+        <div class="doFlex" id="packs">
+            <div class="doFlex">
+                <img src="./images/check_small.png" alt="">
+                <h3>Packs tailored to your needs</h3>
+            </div>
+            <div class="doFlex">
+                <img src="./images/check_small.png" alt="">
+                <h3>Hassle-free regular care</h3>
+            </div>
+            <div class="doFlex">
+                <img src="./images/check_small.png" alt="">
+                <h3>Get professional guidance</h3>
+            </div>
+        </div>
+
+        <h3>Select a pack</h3>
+        <div class="doFlex" id="pack_boxs">
+
+            <div class="doFlex">
+                <h4>12 sessions valid for 12 months <br> ₹ 9000</h4>
+                <h2> BUY </h2>
+            </div>
+            <div class="doFlex">
+                <h4>8 sessions valid for 8 months <br> ₹ 9000</h4>
+                <h2> BUY </h2>
+            </div>
+            <div class="doFlex">
+                <h4>4 sessions valid for 4 months <br> ₹ 9000</h4>
+                <h2> BUY </h2>
+            </div>
+        </div>
+        <hr style="border: 1px dashed black;" />
+        <br><br><br><br>
+    </div>
+
+    <img class="img" src="./images/foot-img1.png" alt="">
+    <img class="img" src="./images/foot-img2.png" alt="">
+    <img class="img" src="./images/foot-img3.png" alt="">
+<br><br>
+    <!-- FAQ section -->
+    <div id="faq">
+        
+
+    </div>
+</body>
+
+</html>
+<script type="module">
+
+    import { mHead, getMindExperts, addFAQ } from "./components/commonFun.js"
+
+    document.getElementById('m_head').innerHTML = mHead();
+
+    let slideShow = document.getElementById('slid_show');
+
+    let images = ["./images/slid_img1.png", "./images/slid_img2.png"];
+
+    let img = document.createElement('img');
+
+
+    const show = () => {
+
+        // console.log("start");
+        for (let i = 0; i <= images.length; i++) {
+            let id = setInterval(function () {
+
+                if (i == images.length) {
+                    i = 0;
+                }
+
+                img.src = images[i];
+                i++;
+                // console.log(img);
+                slideShow.append(img);
+
+            }, 2000);
+
+        }
+        // setting time interval is important.
+
+    }
+
+    show();
+
+
+    let mindExperts = getMindExperts();
+
+    console.log(experts);
+
+    let expertsDiv = document.getElementById('experts');
+    let c_logo = "./images/Time-icon-2.png"
+    mindExperts.forEach(({ title, des, time, image }) => {
+
+        let div = document.createElement('div');
+
+        let titl = document.createElement('h3');
+        titl.innerText = title;
+
+        let de = document.createElement('p');
+        de.innerText = des;
+
+        let logo = document.createElement('img');
+        logo.src = c_logo;
+
+        let tym = document.createElement('p');
+        tym.innerText = time;
+
+        //    let img= document.createElement('img');
+        //    img.src= image;
+
+        // image.style.width ="100%"
+        div.style.backgroundImage = `url(${image})`;
+
+
+        div.append(titl, de, logo, tym);
+
+        console.log(div);
+        expertsDiv.append(div);
+
+    });
+
+    let faqDiv = document.getElementById('faq');
+    faqDiv.innerHTML = addFAQ();
+
+    var toggles = document.querySelectorAll(".faq-toggle");
+    var titles = document.querySelectorAll(".faq-title");
+
+    toggles.forEach((toggle) => {
+        toggle.addEventListener("click", () => {
+            toggle.parentNode.classList.toggle("active");
+        });
+    });
+    titles.forEach((title) => {
+        title.addEventListener("click", () => {
+            title.parentNode.classList.toggle("active");
+        });
+    });
+
+</script>
