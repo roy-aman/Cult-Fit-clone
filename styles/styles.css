@@ -47,11 +47,34 @@
   font-family: "BrandonTextWeb-Regular";
 }
 
+/* pre-loader styling  */
+.site_loader {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  z-index: 9999;
+  justify-content: center;
+}
+
+.site_loader > img {
+  width: 150px;
+  height: 150px;
+}
+
 /* navbar styles  */
 header {
   width: 100%;
   height: 60px;
   background-color: #15171c;
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+  user-select: none;
+  transition: transform 0.5s ease;
 }
 
 header > nav {
@@ -64,9 +87,10 @@ header > nav {
   justify-content: space-between;
 }
 
-header > nav > .navbar_logo > img {
+header > nav > .navbar_logo > a > img {
   width: 120px;
   height: 30px;
+  cursor: pointer;
 }
 
 header > nav > .middle_nav_links {
@@ -164,7 +188,7 @@ main {
 }
 
 main > #home_section {
-  margin-top: 70px;
+  margin-top: 200px;
   display: flex;
   align-items: center;
 }
@@ -277,51 +301,64 @@ main > #home_section > .right_home > div > .audio_icon > img:hover {
 }
 
 /* cult section styling  */
-#cult_section {
+#cult_section,
+#live_section,
+#sport_section,
+#mind_section,
+#care_section,
+#eat_section {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 70px;
 }
 
-#cult_section > .cult_container {
+.cult_container {
   width: 80%;
   margin: auto;
 }
-#cult_section > .cult_container > div {
+.cult_container > div {
   margin-bottom: 8px;
 }
 
-#cult_section > .cult_container > div > img {
+.cult_container > div > img {
   width: 90px;
 }
+.cult_container > div > .sport_image {
+  width: 190px;
+}
 
-#cult_section > .cult_container > div:nth-child(2) {
+.cult_container > div:nth-child(2) {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#cult_section > .cult_container > div:nth-child(2) > p,
-#cult_section > .cult_container > div:nth-child(2) > a {
+.cult_container > div:nth-child(2) > p,
+.cult_container > div:nth-child(2) > a {
   font-family: BrandonTextWeb-Bold, Helvetica Neue, Helvetica, Roboto, Arial,
     sans-serif;
   font-size: 20px;
   color: #111;
 }
 
-#cult_section > .cult_container > div:nth-child(2) > a:hover {
+.cult_container > div:nth-child(2) > a:hover {
   color: rgba(0, 0, 0, 0.5);
 }
 
-#cult_section > .cult_container > div:nth-child(2) > a > span {
+.cult_container > div:nth-child(2) > a > span {
   font-size: 28px;
   color: rgba(0, 0, 0, 0.4);
 }
 
-#cult_section > .cult_container > div:nth-child(3) {
+.cult_container > div:nth-child(3) {
   font-size: 14px;
 }
 
-#cult_section > .cult_container > #cult_image_section {
+.cult_container > #cult_image_section,
+.cult_container > #live_image_section,
+.cult_container > #sport_image_section,
+.cult_container > #mind_image_section,
+.cult_container > #care_image_section,
+.cult_container > #eat_image_section {
   margin-top: 30px;
   width: 100%;
   overflow: hidden;
@@ -329,35 +366,116 @@ main > #home_section > .right_home > div > .audio_icon > img:hover {
   border-radius: 10px;
 }
 
-#cult_section > .cult_container > #cult_image_section > ul {
+.cult_container > #cult_image_section > ul,
+.cult_container > #live_image_section > ul,
+.cult_container > #sport_image_section > ul,
+.cult_container > #mind_image_section > ul,
+.cult_container > #care_image_section > ul,
+.cult_container > #eat_image_section > ul {
   display: flex;
+  transition: all 0.5s ease;
 }
-#cult_section > .cult_container > #cult_image_section > ul > li {
+.cult_container > #cult_image_section > ul > li,
+.cult_container > #live_image_section > ul > li,
+.cult_container > #sport_image_section > ul > li,
+.cult_container > #mind_image_section > ul > li,
+.cult_container > #care_image_section > ul > li,
+.cult_container > #eat_image_section > ul > li {
   position: relative;
+  transition: all 0.5s ease;
 }
 
-#cult_section > .cult_container > #cult_image_section > ul > li > div {
+.cult_container > #cult_image_section > ul > li:nth-child(1),
+.cult_container > #live_image_section > ul > li:nth-child(1),
+.cult_container > #sport_image_section > ul > li:nth-child(1),
+.cult_container > #mind_image_section > ul > li:nth-child(1),
+.cult_container > #care_image_section > ul > li:nth-child(1),
+.cult_container > #eat_image_section > ul > li:nth-child(1) {
+  flex: 3;
+}
+.cult_container > #cult_image_section > ul > li:nth-child(2),
+.cult_container > #live_image_section > ul > li:nth-child(2),
+.cult_container > #sport_image_section > ul > li:nth-child(2),
+.cult_container > #mind_image_section > ul > li:nth-child(2),
+.cult_container > #care_image_section > ul > li:nth-child(2),
+.cult_container > #eat_image_section > ul > li:nth-child(2) {
+  flex: 1;
+}
+.cult_container > #cult_image_section > ul > li:nth-child(3),
+.cult_container > #live_image_section > ul > li:nth-child(3),
+.cult_container > #sport_image_section > ul > li:nth-child(3),
+.cult_container > #mind_image_section > ul > li:nth-child(3),
+.cult_container > #eat_image_section > ul > li:nth-child(3) {
+  flex: 1;
+}
+
+.cult_container > #eat_image_section > ul > li:nth-child(4) {
+  flex: 1;
+}
+
+.cult_container > #cult_image_section > ul > li > div,
+.cult_container > #live_image_section > ul > li > div,
+.cult_container > #sport_image_section > ul > li > div,
+.cult_container > #mind_image_section > ul > li > div,
+.cult_container > #care_image_section > ul > li > div,
+.cult_container > #eat_image_section > ul > li > div {
   position: absolute;
   top: 8%;
   left: 6%;
   color: #fff;
-  width: 50%;
+  width: 300px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: flex-start;
+  transition: opacity 2s ease;
 }
 
-#cult_section > .cult_container > #cult_image_section > ul > li > img {
-  height: 70%;
-  object-fit: cover;
-  float: right;
-  object-position: 20%;
-  height: 34em;
+.cult_container > #cult_image_section > ul > li > div > p,
+.cult_container > #cult_image_section > ul > li > div > button,
+.cult_container > #live_image_section > ul > li > div > p,
+.cult_container > #live_image_section > ul > li > div > button,
+.cult_container > #sport_image_section > ul > li > div > p,
+.cult_container > #sport_image_section > ul > li > div > button,
+.cult_container > #mind_image_section > ul > li > div > p,
+.cult_container > #mind_image_section > ul > li > div > button,
+.cult_container > #care_image_section > ul > li > div > p,
+.cult_container > #care_image_section > ul > li > div > button,
+.cult_container > #eat_image_section > ul > li > div > p,
+.cult_container > #eat_image_section > ul > li > div > button {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cult_container > #cult_image_section > ul > li > .opacity > p,
+.cult_container > #cult_image_section > ul > li > .opacity > button,
+.cult_container > #live_image_section > ul > li > .opacity > p,
+.cult_container > #live_image_section > ul > li > .opacity > button,
+.cult_container > #sport_image_section > ul > li > .opacity > p,
+.cult_container > #sport_image_section > ul > li > .opacity > button,
+.cult_container > #mind_image_section > ul > li > .opacity > p,
+.cult_container > #mind_image_section > ul > li > .opacity > button,
+.cult_container > #care_image_section > ul > li > .opacity > p,
+.cult_container > #care_image_section > ul > li > .opacity > button,
+.cult_container > #eat_image_section > ul > li > .opacity > p,
+.cult_container > #eat_image_section > ul > li > .opacity > button {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 2s ease;
+}
+
+.cult_container > #cult_image_section > ul > li > img,
+.cult_container > #live_image_section > ul > li > img,
+.cult_container > #sport_image_section > ul > li > img,
+.cult_container > #mind_image_section > ul > li > img,
+.cult_container > #care_image_section > ul > li > img,
+.cult_container > #eat_image_section > ul > li > img {
+  height: 35em;
   position: relative;
   object-fit: cover;
-  object-position: 80% 0;
-  max-width: 100%;
+  object-position: 80%;
+  width: 100%;
+  transition: all 0.4s ease;
 }
 
 .cult_btn {
@@ -371,4 +489,101 @@ main > #home_section > .right_home > div > .audio_icon > img:hover {
   background-color: transparent;
   text-transform: uppercase;
   font-size: 12px;
+}
+
+.live_btn {
+  color: #111;
+  border-color: #111;
+}
+
+.cult_btn:hover {
+  box-shadow: 0 14px 40px 0 rgb(0 0 0 / 10%);
+  transform: translateY(-3px);
+  transition: transform 0.4s ease;
+}
+
+.cult_container > #live_image_section > ul > li > div,
+.cult_container > #care_image_section > ul > li > div {
+  color: #111;
+}
+
+/* getApp section styling  */
+#getApp {
+  margin-top: 60px;
+  background-image: linear-gradient(to right, #6f69aa, #378ac5);
+  height: 76vh;
+}
+
+#getApp > .getApp_container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#getApp > .getApp_container > img {
+  width: 300px;
+  height: 350px;
+}
+#getApp > .getApp_container > div {
+  color: #fff;
+}
+
+#getApp > .getApp_container > div > h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  width: 90%;
+}
+#getApp > .getApp_container > div > p {
+  font-size: 19px;
+  padding-bottom: 30px;
+}
+
+#getApp > .getApp_container > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 58%;
+}
+
+/* business section styling  */
+#business_section {
+  width: 100%;
+  height: 100%;
+}
+
+#business_section > a > img {
+  width: 100%;
+}
+
+/* careers section styling  */
+#careers_section {
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+}
+
+#careers_section > a > img {
+  width: 100%;
+}
+
+/* tag section styling  */
+#BBE_tag {
+  width: 80%;
+  margin: 20px auto;
+  height: 100%;
+}
+
+#BBE_tag > h1 {
+  font-size: 100px;
+  color: #6e6e6e;
+  font-family: BrandonTextWeb-Bold, sans-serif;
+}
+
+#BBE_tag > h2 {
+  font-size: 80px;
+  color: #b2b2b2;
+  font-family: BrandonTextWeb-Bold, sans-serif;
 }
