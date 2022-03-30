@@ -1,0 +1,189 @@
+#slid_show{
+
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  #slid_show>img {
+
+    width: 100%;
+    /* height: 200px; */
+      margin:2% 0;
+       appearance:auto;
+
+  }
+
+  #div1{
+    background-color: #309dbf;
+    text-align: center;
+    padding:15px ;
+    width: 80%;
+    margin :-15px auto ;
+    
+    font-size: 155%;
+  }
+
+/* this is not woking : resize it's height */
+  #div2{
+    width: 80%;
+    margin: 0  auto 20% ;
+    
+  }
+
+  #experts {
+    /* width: 90%; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:5% ;
+    margin: auto;
+    height: fit-content;
+  }
+
+  #experts > div{
+    backface-visibility: visible;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size:contain; 
+    /* background-repeat: repeat-x; */
+    background-color: #e0dfd9;
+    border-radius: 8px;
+    color: black;
+    font-style: oblique;
+    font-family: cursive;
+
+  }
+
+  #experts>div:hover{
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  }
+
+  #div3 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    /* text-align: center; */
+    justify-content:space-between;
+    background-color:#309dbf ;
+    font-size:150%;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  #div3 > button{
+    width: fit-content;
+    height: fit-content;
+    margin: auto 5%;
+    /* block-size: 150%; */
+    background-color: deeppink;
+    border-radius: 10px;
+  }
+
+  #div4{
+    background-color: #cbe6ff;
+    text-align: center;
+   
+  }
+
+  #packs{
+    width: 60%;
+    margin: auto;
+    justify-content: space-around;
+    color: #988a84;
+  }
+  #packs >div >img{
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    margin: auto;
+  }
+  .doFlex{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    gap: 2%;
+    text-align: left;
+  }
+
+  .doFlex>h2{
+    color: deeppink;
+  }
+.img{
+  width: 100%;
+}
+
+#faq{
+    width: 80%;
+    margin: auto;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .faq {
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+  
+  .faq.active {
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .faq-toggle {
+    background-color: transparent;
+    color:deeppink;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+  }
+  .faq-title {
+    margin: 0 35px 0 0;
+    color: #6a6a6a;
+  }
+  
+  .faq-text {
+    display: none;
+    margin: 30px 0 0;
+  }
+  
+  .faq.active .faq-text {
+    display: block;
+  }
+  .faq-toggle:focus {
+    outline: 0;
+  }
+  
+  .faq-toggle .fa-times {
+    display: none;
+  }
+  
+  .faq.active .faq-toggle .fa-times {
+    display: block;
+    color: white;
+  }
+  
+  .faq.active .faq-toggle .fa-chevron-down {
+    display: none;
+  }
+  .faq.active .faq-toggle {
+    background-color: rgb(31, 30, 30);
+  }
