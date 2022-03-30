@@ -46,3 +46,52 @@
     width: 100%;
     border-radius: 2%;
 }
+.advert{
+    width: 80%;
+    border-radius: 2%;
+    margin-left: 10%;
+}
+
+#rahul{
+    width: 80%;
+    display: flex;
+    margin-left: 10%;
+    justify-content: space-between;
+    overflow: auto;
+    white-space: nowrap;
+    gap: 95px;
+}
+#rahul div img{
+    width: 382px;
+    height: 215px;
+    border-radius: 2%;
+}
+
+#books{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 80%;
+    margin-left: 10%;
+    gap: 20px;
+}
+
+#grd{
+    display: flex;
+    width: 624px;
+}
+#grd div img{
+    width: 212px;
+    height: 251px;
+    padding: 15px;
+}
+
+#books div:last-child{
+    padding: 15px 15px 0px 0px;
+    background-color: white;
+}
+#collection{
+    background-color: rgb(240,241,247);
+}
+#books div{
+    background-color: white;
+}
