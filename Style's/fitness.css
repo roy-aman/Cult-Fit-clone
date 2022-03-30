@@ -1,3 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap");
+
+/* fonts taken from cult-fit official  */
+@font-face {
+  font-family: "BrandonTextWeb-Medium";
+  font-display: swap;
+  src: url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.eot");
+  src: url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.woff2")
+      format("woff2"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.woff") format("woff"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "BrandonTextWeb-Regular";
+  font-display: swap;
+  src: url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.eot");
+  src: url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.woff2")
+      format("woff2"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.woff") format("woff"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "BrandonTextWeb-Bold";
+  font-display: swap;
+  src: url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.eot");
+  src: url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.woff2")
+      format("woff2"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.woff") format("woff"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.ttf")
+      format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "BrandonTextWeb-Regular";
+}
+
+
+
+
 #slideshow img{
     height: 300px;
     width: 100%;
@@ -57,12 +109,14 @@
     display: flex;
     margin-left: 10%;
     justify-content: space-between;
-    overflow: auto;
+    overflow-y: auto;
     white-space: nowrap;
-    gap: 95px;
+    gap: 20px;
+    border: 2px solid red;
+    height: 320px;
 }
 #rahul div img{
-    width: 382px;
+    width: 380px;
     height: 215px;
     border-radius: 2%;
 }
@@ -95,3 +149,114 @@
 #books div{
     background-color: white;
 }
+
+
+#faq{
+    width: 100%;
+    margin: auto;
+    background-color: rgb(240,241,247);
+    /* margin-top: -22px; */
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .faq {
+    background-color: white;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+  
+  .faq.active {
+    background-color: transparent;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .faq-toggle {
+    background-color: transparent;
+    color:deeppink;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+  }
+  .faq-title {
+    margin: 0 35px 0 0;
+    color: #6a6a6a;
+  }
+  
+  .faq-text {
+    display: none;
+    margin: 30px 0 0;
+  }
+  
+  .faq.active .faq-text {
+    display: block;
+  }
+  .faq-toggle:focus {
+    outline: 0;
+  }
+  
+  .faq-toggle .fa-times {
+    display: none;
+  }
+  
+  .faq.active .faq-toggle .fa-times {
+    display: block;
+    color: white;
+  }
+  
+  .faq.active .faq-toggle .fa-chevron-down {
+    display: none;
+  }
+  .faq.active .faq-toggle {
+    background-color: rgb(31, 30, 30);
+  }
+
+  #faq h1{
+      padding-left: 20%;
+  }
+  #faq h1:first-child{
+    padding-top: 50px;
+}
+
+.ovr{
+    margin-top: -200px;
+    margin-left: 10px;
+    color: rgb(236,236,236);;
+}
+.ovr h3{
+    color: aliceblue;
+}
+
+
+
+/* body {
+	margin: 3em;
+} */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
