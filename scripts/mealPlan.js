@@ -4,7 +4,11 @@ import { getfooddata, appendfooddata } from "./getfooddata.js"
 let fooddata = await getfooddata(`https://www.themealdb.com/api/json/v1/1/search.php?f=k`)
 
 let parent = document.querySelector(`#foodcontainer`)
+// <<<<<<< tapish
+appendfooddata(fooddata, parent, "mealPlans")
+// =======
 appendfooddata(fooddata, parent)
+// >>>>>>> main
 
 const changeSelect = async(x) => {
    // console.log(1)
@@ -33,7 +37,11 @@ const changeSelect = async(x) => {
    } else {
       document.getElementById('dinner').style.borderBottom = "3px solid white"
    }
+// <<<<<<< tapish
+   appendfooddata(fooddata, parent, "mealPlans")
+=======
    appendfooddata(fooddata, parent)
+// >>>>>>> main
 }
 
 let type = document.querySelectorAll(`#mealsType>div`)

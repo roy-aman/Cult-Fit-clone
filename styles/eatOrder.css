@@ -29,6 +29,8 @@
 }
 
 
+/* <<<<<<< tapish
+======= */
 /* slider and slider button */
 #eatOrderSliderButton {
    display: flex;
@@ -51,6 +53,7 @@
    padding-top: 5px;
 }
 
+/* >>>>>>> main */
 /* fiberbar div */
 
 #eatFilterbar {
@@ -77,6 +80,10 @@
    gap: 30px;
 }
 
+/* <<<<<<< tapish */
+#eatFilter div {
+   cursor: pointer;
+}
 
 #eatFilter>div:first-child>p{
    width: 50px;
@@ -93,6 +100,91 @@
    gap: 15px;
 }
 
+/* <<<<<<< tapish */
+/* items description */
+
+#eatItemContainer {
+   width: 60%;
+   margin: auto;
+   display: flex;
+}
+
+#itemlist {
+   width: 20%;
+}
+
+#itemlist>div {
+   padding: 10px 0;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+#itemlist>div:hover {
+   border-bottom: 2px solid #ff316d;
+   font-size: 25px;
+}
+
+#itemDescription {
+   width: 80%;
+   margin: 10px auto 40px;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 20px;
+}
+
+#fooditemdiv>div {
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   padding: 0 5px;
+}
+
+#fooditemdiv>div:last-child{
+   /* width: 43%; */
+   margin: auto;
+   padding-top: 8px;
+}
+
+#eat {
+   cursor: pointer;
+}
+
+#cart {
+   color: #ff316d;
+   font-size: 18px;
+   font-weight: bold;
+   background-color: #fff;
+   border-radius: 15px;
+
+
+   width: 100px;
+}
+
+#fooditemdiv>img:hover {
+   border: 1px solid red;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#eattags {
+   width: 60%;
+   margin: auto;
+}
+
+#eattags>p{
+   line-height: 1.2;
+   letter-spacing: -0.6px;
+   margin-bottom: 0;
+   font-weight: 600;
+}
+
+#eattags>p:first-child {
+   font-size: 80px;
+   color: #6e6e6e;
+}
+#eattags>p:last-child {
+   font-size: 60px;
+   color: #b2b2b2;
+}
+/* ======= */
 /* #eatFilter>div:last-child>img{
    padding-right: 15px;
 } 
@@ -106,3 +198,4 @@
 /* #eatItemContainer {
    display: ;
 } */
+/* >>>>>>> main */
