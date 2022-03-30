@@ -1,0 +1,39 @@
+/* *{
+  border: 2px solid blueviolet;
+} */
+body, html {
+    overflow-x: visible;
+    font-family: BrandonTextWeb-Regular,Helvetica Neue, Helvetica, Roboto, Arial, sans-serif
+  }
+  body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143; color: #333; background-color: #fff
+  }
+  body { max-width: 100% }
+  body { margin: 0 }
+
+       #m_head{
+          width: 100%;
+          /* height: 50px; */
+          background-color: #393a3b;
+          display: flex;
+          gap: 50px;
+          /* color: aliceblue; */
+          justify-content:center;
+         /* position: fixed; */
+      }
+
+      #m_head > button{
+
+          width: auto;
+          height: fit-content;
+          padding: 2px;
+          margin: 15px;
+          background-color: #393a3b;
+          border: none;
+          color: aliceblue;
+          font-size: 105%;  
+          text-align: center;          
+      }
+    

@@ -1,13 +1,22 @@
 
+// <<<<<<< tapish
 const getfooddata = async (url) => {
 
    let res = await fetch(url)
    let data = await res.json()
    console.log(data.meals)
+
+const getfooddata = async(url) => {
+
+   let res = await fetch(url)
+   let data = await res.json()
+   // console.log(data.meals)
+// >>>>>>> main
    return data.meals
 }
 
 
+// <<<<<<< tapish
 const appendfooddata = (data, parent, who) => {
    parent.innerHTML = null
    data.forEach(({ strMeal, strMealThumb }) => {
@@ -18,9 +27,27 @@ const appendfooddata = (data, parent, who) => {
       title.innerText = strMeal
       title.style.fontWeight = "bold"
 
+const appendfooddata = (data, parent) => {
+   parent.innerHTML = null
+   data.forEach(({strMeal, strMealThumb}) => {
+      let div = document.createElement(`div`)
+      div.setAttribute("id","fooditemdiv")
+
+      let title = document.createElement(`P`)
+      title.innerText = strMeal
+// >>>>>>> main
+
       let money = Math.floor(Math.random() * (250 - 100) + 100)
       let origional = money + Math.floor(Math.random() * (50 - 25) + 25)
 
+// <<<<<<< tapish
+
+      let bottomdiv = document.createElement(`div`)
+      bottomdiv.style.display = "grid"
+      bottomdiv.style.padding = "0 5px"
+      bottomdiv.style.gridTemplateColumns = "repeat(2,1fr)"
+
+// >>>>>>> main
       let starting = document.createElement(`div`)
       starting.innerText = "Starting Price"
 
@@ -28,7 +55,9 @@ const appendfooddata = (data, parent, who) => {
       strikedoffPrice.innerText = `₹` + origional + '/meal'
       strikedoffPrice.style.textDecoration = 'line-through'
       strikedoffPrice.style.textAlign = "right"
+// <<<<<<< tapish
 
+// =======
       let offer = document.createElement(`div`)
       offer.innerText = "Offer Price"
 
@@ -42,6 +71,7 @@ const appendfooddata = (data, parent, who) => {
       image.style.width = "100%"
       image.style.borderRadius = "5px"
 
+// <<<<<<< tapish
       let bottomdiv = document.createElement(`div`)
 
       let cartbutton = document.createElement(`div`)
@@ -84,3 +114,13 @@ const addtocart = (strMeal,strMealThumb,money) => {
 }
 
 export { getfooddata, appendfooddata }
+// =======
+
+      bottomdiv.append(starting,strikedoffPrice,offer,price)
+      div.append(image,title,bottomdiv)
+      parent.append(div)
+   })
+}
+
+export {getfooddata , appendfooddata}
+// >>>>>>> main

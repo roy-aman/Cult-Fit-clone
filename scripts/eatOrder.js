@@ -1,3 +1,4 @@
+// <<<<<<< tapish
 import { getfooddata, appendfooddata } from "./getfooddata.js"
 
 let fooddata = await getfooddata(`https://www.themealdb.com/api/json/v1/1/search.php?f=k`)
@@ -28,3 +29,12 @@ const showVeg = async () => {
    }
 }
 vegdiv.addEventListener('click', showVeg)
+// =======
+// getting food data
+
+// const getFoodData = async() => {
+//    let res = fetch(``)
+// }
+
+
+// >>>>>>> main

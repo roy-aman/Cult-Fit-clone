@@ -29,6 +29,31 @@
 }
 
 
+/* <<<<<<< tapish
+======= */
+/* slider and slider button */
+#eatOrderSliderButton {
+   display: flex;
+   height: 30px;
+   width: 60%;
+   margin: auto;
+   padding: 0 15px;
+   justify-content: space-between;
+}
+
+.sliderArrow {
+   width: 15px;
+   height: 15px;
+   padding-top: 5px;
+}
+
+.sliderdot{
+   width: 20px;
+   height: 20px;
+   padding-top: 5px;
+}
+
+/* >>>>>>> main */
 /* fiberbar div */
 
 #eatFilterbar {
@@ -55,6 +80,7 @@
    gap: 30px;
 }
 
+/* <<<<<<< tapish */
 #eatFilter div {
    cursor: pointer;
 }
@@ -74,6 +100,7 @@
    gap: 15px;
 }
 
+/* <<<<<<< tapish */
 /* items description */
 
 #eatItemContainer {
@@ -157,3 +184,18 @@
    font-size: 60px;
    color: #b2b2b2;
 }
+/* ======= */
+/* #eatFilter>div:last-child>img{
+   padding-right: 15px;
+} 
+#eatFilter>div:last-child>p {
+   padding-top: 5px; 
+   height: 30px; 
+}  */
+
+/* Item display */
+
+/* #eatItemContainer {
+   display: ;
+} */
+/* >>>>>>> main */
