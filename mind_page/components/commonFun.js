@@ -1,8 +1,10 @@
 
 const mHead= ()=>{
 
-    return ` <button>Therapy</button>
-    <button>MindFulness</button>`;
+    return ` 
+      <div><a href="mind.html"> Therapy </a></div>
+      <div><a href="mindfulness.html">Mindfulness</a></div>
+    `;
 }
 
 
@@ -123,5 +125,23 @@ const addFAQ= ()=>{
         </div>
     </div>`
 }
+
+
+// data for minfulness tab 
+
+const addMindfulness_data=()=>{
+
+    data=[
+        { 
+          descriptions: "",
+          img : ""
+    
+    }
+
+    ]
+
+}
+
+
 
 export { mHead, getMindExperts, addFAQ};
