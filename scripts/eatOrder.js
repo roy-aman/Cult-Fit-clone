@@ -15,8 +15,8 @@ let vegClickCounter = false
 const showVeg = async () => {
    if (!vegClickCounter) {
       vegClickCounter = true
-      vegdiv.style.backgroundColor = "green"
-      vegdiv.style.color = "white"
+      vegdiv.style.backgroundColor = "#D8F2BC"
+      vegdiv.style.color = "green"
       fooddata = await getfooddata(`https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegetarian`)
       appendfooddata(fooddata, parent, "eatOrder")
    }

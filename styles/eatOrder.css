@@ -28,10 +28,6 @@
    font-size: 18px;
 }
 
-
-/* <<<<<<< tapish
-======= */
-/* slider and slider button */
 #eatOrderSliderButton {
    display: flex;
    height: 30px;
@@ -53,8 +49,6 @@
    padding-top: 5px;
 }
 
-/* >>>>>>> main */
-/* fiberbar div */
 
 #eatFilterbar {
    /* border: 1px solid red; */
@@ -99,9 +93,6 @@
    display: flex;
    gap: 15px;
 }
-
-/* <<<<<<< tapish */
-/* items description */
 
 #eatItemContainer {
    width: 60%;
@@ -184,18 +175,4 @@
    font-size: 60px;
    color: #b2b2b2;
 }
-/* ======= */
-/* #eatFilter>div:last-child>img{
-   padding-right: 15px;
-} 
-#eatFilter>div:last-child>p {
-   padding-top: 5px; 
-   height: 30px; 
-}  */
 
-/* Item display */
-
-/* #eatItemContainer {
-   display: ;
-} */
-/* >>>>>>> main */
