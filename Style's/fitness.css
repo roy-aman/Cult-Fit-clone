@@ -105,14 +105,13 @@
 }
 
 #rahul{
+  
+ 
     width: 80%;
     display: flex;
     margin-left: 10%;
     justify-content: space-between;
-    overflow-y: auto;
-    white-space: nowrap;
     gap: 20px;
-    border: 2px solid red;
     height: 320px;
 }
 #rahul div img{
@@ -258,5 +257,61 @@
 }
 
 
+/* .scrll{
+  position: relative;
+  overflow: hidden;
 
+} */
+
+
+
+
+/* practice---------------- */
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.horizontal-scroll{
+  width: 80%;
+  height: 300px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.storys-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  gap: 2%;
+  transition: 0.5s all ease-out;
+  margin-top: -150px;
+}
+.story img{
+  width: 380px;
+  height:215px;
+ 
+}
+
+.horizontal-scroll .btn-scroll{
+  background-color: transparent;
+  color: black;
+  padding: 5px 8px;
+  border: 0;
+  border-radius: 50%;
+  margin: 0 5px;
+  z-index: 1;
+  cursor: pointer;
+}
 
