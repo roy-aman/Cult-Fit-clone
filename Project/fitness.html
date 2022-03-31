@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <link data-rh="true" rel="icon" href="https://static.cure.fit/assets/images/favicon-modified.png" sizes="16x16"
+        type="image/png" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <link rel="stylesheet" href="./Style's/fitness.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <div id="optn">
+           <div>
+            <p style="color: rgb(214, 121, 182);"> Fitness</p>
+            <p>Mindfulness</p>
+            <p>Recipes</p>
+        </div> 
+        </div>
+    <div id="fitBox">
+        
+        <div id="flot_option"></div>
+        <div id="slideshow">
+            <img id="slide", onclick="stop_show()", ondblclick="start_show()">
+            <div id="buttons_nav"></div>
+        </div>
+        <div id="offer"  onclick="book_offer()">
+            
+            <img src="./images/52edcb56-2348-472f-8291-5e29185545ff.webp" alt="" >
+            <div><p id="demo"></p></div>
+        </div>
+        <img src="./images/free trial.webp" alt="" class="advert">
+        <h2 style="margin-left: 10%; margin-top: 70px;">Live Interactive</h2>
+        <div class="menu-wrapper">
+            <div id="rahul">
+            <div><img src="./images/rahul h.webp" alt="">
+                <h2 style="color: rgb(91, 175, 214);">Rahul H</h2>
+                <h4>Fit Hour with Rahul | Live</h4>
+                <p style="color: rgb(175,175,175);">SNC . BEGINNER . TODAY . 06.00 PM . 1HR</p>
+            </div>
+            <div><img src="./images/back bend.webp" alt="">
+                <h2 style="color: rgb(91, 175, 214);">Naveen S</h2>
+                <h4>NAVEEN S | Live</h4>
+                <p style="color: rgb(175,175,175);">Asana 101: Back bends</p>
+            </div>
+            <div><img src="./images/rahul h.webp" alt="">
+                <h2 style="color: rgb(91, 175, 214);">Rahul H</h2>
+                <h4>Fit Hour with Rahul | Live</h4>
+                <p style="color: rgb(175,175,175);">SNC . BEGINNER . TODAY . 06.00 PM . 1HR</p>
+            </div>
+        </div>
+        </div>
+        
+                
+        
+        <!-- scroll -->
+        <h2 style="margin-left: 10%; margin-top: 70px; color: black; margin-bottom: 20px;">Now Live</h2>
+        <div class="container">
+            <div class="horizontal-scroll">
+              <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i class="fa fa-angle-left" style="font-size:36px"></i>            </button>
+              <button class="btn-scroll" id="btn-scroll-right" onclick="scrollHorizontally(-1)"><i class="fa fa-angle-right" style="font-size:36px"></i></button>
+              <div class="storys-container">
+                        <div class="story"><img src="./images/must 1.webp" alt="">
+                          <div class="ovr">
+                              <h3>Dance & Burn</h3>
+                              <p>25 min</p>
+                          </div>
+                          
+      
+                      </div>
+                      <div class="story"><img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_300,ar_1.77,c_fill,fl_progressive,f_auto,q_auto:eco/dpr_2/image/diy/5b83cef1-3ed1-4004-b581-7666a9c9067f" alt="">
+                        <div class="ovr">
+                            <h3>Core Yoga</h3>
+                            <p>30 min</p>
+                        </div>
+                        
+                    </div>
+                    <div class="story"><img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_300,ar_1.77,c_fill,fl_progressive,f_auto,q_auto:eco/dpr_2/image/diy/910614dd-bce7-4db4-9e73-16bc7c3a5a0f"alt="">
+                      <div class="ovr">
+                          <h3>Calorie Crush</h3>
+                          <p>30 min</p>
+                      </div>
+                      
+                  </div>
+                  <div class="story"><img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_300,ar_1.77,c_fill,fl_progressive,f_auto,q_auto:eco/dpr_2/image/diy/e32f7bfe-8c87-4dcb-b158-1f91f8e52459" alt="">
+                    <div class="ovr">
+                        <h3>Belly Burner</h3>
+                        <p>25 min</p>
+                    </div>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+
+                  <!-- scroll -->
+        <h2 style="margin-left: 10%; margin-top: 70px; color: black; margin-bottom: 20px;">Now Live</h2>
+        <div class="container">
+            <div class="horizontal-scroll">
+              <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally2(1)"><i class="fa fa-angle-left" style="font-size:36px"></i>            </button>
+              <button class="btn-scroll" id="btn-scroll-right" onclick="scrollHorizontally2(-1)"><i class="fa fa-angle-right" style="font-size:36px"></i></button>
+              <div class="storys-container">
+                        <div class="story"><img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_300,ar_1.77,c_fill,fl_progressive,f_auto,q_auto:eco/dpr_2/image/diy/2e5008bd-9e06-40ad-96d8-cd1a7df156a1" alt="">
+                          <div class="ovr">
+                              <h3>Walk Fitness</h3>
+                              <p>40 Session</p>
+                          </div>
+                          
+      
+                      </div>
+                      <div class="story"><img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_300,ar_1.77,c_fill,fl_progressive,f_auto,q_auto:eco/dpr_2/image/diy/6c8d54ab-bc2b-460b-9dad-9f1dc2924813" alt="">
+                        <div class="ovr">
+                            <h3>Dance & Fitness</h3>
+                            <p>209 Session</p>
+                        </div>
+                        
+                    </div>
+                    <div class="story"><img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_300,ar_1.77,c_fill,fl_progressive,f_auto,q_auto:eco/dpr_2/image/diy/57aa742d-751d-4d80-a250-75d67b5d5290" alt="">
+                      <div class="ovr">
+                          <h3>HRX</h3>
+                          <p>50 Session</p>
+                      </div>
+                      
+                  </div>
+                  <div class="story"><img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_300,ar_1.77,c_fill,fl_progressive,f_auto,q_auto:eco/dpr_2/image/diy/4d02e22c-d52c-4f2b-b911-4bf8656c7d01" alt="">
+                    <div class="ovr">
+                        <h3>Yoga</h3>
+                        <p>85 Session</p>
+                    </div>
+                    
+                </div>
+                <div class="story"><img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_300,ar_1.77,c_fill,fl_progressive,f_auto,q_auto:eco/dpr_2/image/diy/c20b9230-843c-4b7c-a712-fdb81850aa62" alt="">
+                    <div class="ovr">
+                        <h3>Dance & Burn</h3>
+                        <p>25 min</p>
+                    </div>
+                    
+                </div>
+                <div class="story"><img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_300,ar_1.77,c_fill,fl_progressive,f_auto,q_auto:eco/dpr_2/image/diy/8d94219c-a37f-4cbe-94fb-fa8326d743ad" alt="">
+                    <div class="ovr">
+                        <h3>Dance & Burn</h3>
+                        <p>25 min</p>
+                    </div>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- books -->
+        <div id="collection">
+            <h2 style="margin-left: 10%; margin-top: 70px; padding: 20px;">Workout Collection</h2>
+
+             <div id="books"></div>
+        </div>
+
+         <!--  ============= Faqs ============ -->
+
+        <div id="faq"></div>
+
+</body>
+</html>
+<script src="./scipt's/fitness.js"></script>
+<script type="module">
+    import {addFAQ } from "../component/compon.js"
+
+
+let faqDiv = document.getElementById('faq');
+faqDiv.innerHTML = addFAQ();
+
+var toggles = document.querySelectorAll(".faq-toggle");
+var titles = document.querySelectorAll(".faq-title");
+
+toggles.forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+        toggle.parentNode.classList.toggle("active");
+    });
+});
+titles.forEach((title) => {
+    title.addEventListener("click", () => {
+        title.parentNode.classList.toggle("active");
+    });
+});
+
+
+</script>
