@@ -10,7 +10,7 @@ const navbar = () => {
       <div><a href="#"> CULT </a></div>
       <div><a href="#"> LIVE </a></div>
       <div><a href="#"> CARE </a></div>
-      <div><a href="#"> EAT </a></div>
+      <div><a href="../eatOrder.html"> EAT </a></div>
       <div><a href="#"> MIND </a></div>
       <div><a href="#"> STORE </a></div>
     </div>
