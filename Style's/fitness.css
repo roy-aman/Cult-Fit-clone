@@ -315,3 +315,89 @@
   cursor: pointer;
 }
 
+
+
+
+
+/*--------------------------- cult fitness-------------------- */
+
+
+#addsImage img{
+  height: 300px;
+  width: 100%;
+}
+
+#fastest-gym h2{
+  margin: 50px 0px 10px 50px;
+}
+
+#fastest-gym img{
+  width: 100%;
+  height: 300px;
+}
+
+/* ------------------------------------------- */
+
+#cultplusN{
+  width: 100%;
+  
+  background-color: rgb(88, 98, 132);
+  color: aliceblue;
+}
+#cultplusNp{
+  text-align: center;
+  margin-top: 20px;
+}
+#cultplusNp1{
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(175,175,175);
+}
+#cultplusNp2{
+  text-align: center;
+  margin-top: 10px;
+}
+#offerNdIV{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px
+}
+#chooseN{
+  text-align: center;
+  margin-top: 40px;
+}
+#pass{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+#pass>div{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  width: 390px;
+  height: 100px;
+  background-color: white;
+  color: black;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+#pass>div>div{
+  display: flex;
+  justify-content: space-between;
+  margin: 5PX;
+  width: 380px;
+  height: 62px;
+}
+#pass>div>div:last-child{
+  background-color: rgb(243, 122, 207);
+  height: auto;
+  width: auto;
+  border-radius: 4px;
+}
+
+#spirit{
+  margin: 100px;
+  margin-left: 10%;
+
+
+}
