@@ -29,12 +29,3 @@ const showVeg = async () => {
    }
 }
 vegdiv.addEventListener('click', showVeg)
-// =======
-// getting food data
-
-// const getFoodData = async() => {
-//    let res = fetch(``)
-// }
-
-
-// >>>>>>> main
