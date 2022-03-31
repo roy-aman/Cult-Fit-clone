@@ -115,6 +115,7 @@
    font-size: 25px;
 }
 
+
 #itemDescription {
    width: 80%;
    margin: 10px auto 40px;
@@ -174,5 +175,65 @@
 #eattags>p:last-child {
    font-size: 60px;
    color: #b2b2b2;
+}
+
+
+
+/* meedia queries */
+
+@media All and (min-width: 1000px) and (max-width: 1800px) {
+   #eatItemContainer {
+      width: 80%;
+   }
+   #itemDescription {
+      grid-template-columns: repeat(3,1fr);
+   }
+   #eatFilterbar {
+      width: 80%;
+   }
+}
+
+@media All and (min-width: 750px) and (max-width: 999px) {
+   #eatItemContainer {
+      width: 95%;
+   }
+   #itemDescription {
+      grid-template-columns: repeat(2,1fr);
+   }
+   #eatFilterbar {
+      width: 95%;
+   }
+}
+
+@media All and (min-width: 500px) and (max-width: 749px) {
+   #eatItemContainer {
+      width: 95%;
+   }
+   #itemDescription {
+      width: 60%;
+      grid-template-columns: repeat(1,1fr);
+   }
+   #eatFilterbar {
+      width: 95%;
+   }
+   #itemlist {
+      width: 40%;
+   }
+}
+
+@media All and (min-width: 50px) and (max-width: 499px) {
+   #eatItemContainer {
+      width: 95%;
+   }
+   #itemDescription {
+      width: 95%;
+      grid-template-columns: repeat(1,1fr);
+   }
+   #eatFilterbar {
+      display: none;
+   }
+   #itemlist {
+      display: none;
+   }
 }
 

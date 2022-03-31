@@ -26,7 +26,6 @@
    display: grid;
    grid-template-columns: repeat(4,1fr);
    gap: 20px;
-/* <<<<<<< tapish */
 }
 
 #fooditemdiv>div {
@@ -35,12 +34,42 @@
    padding: 0 5px;
 }
 
-
-/* style data appended through js #fooditems */
-
-/* #fooditemdiv {
-
-} */
-/* ======= */
+/* Media queries */
+@media All and (min-width: 1000px) and (max-width: 1500px) {
+   #meals {
+      width: 90%;
+   }
 }
-/* >>>>>>> main */
+
+@media All and (min-width: 720px) and (max-width: 999px) {
+   #meals {
+      width: 90%;
+
+   }
+   #foodcontainer {
+      grid-template-columns: repeat(3,1fr);
+   }
+}
+
+@media All and (min-width: 470px) and (max-width: 719px) {
+   #meals {
+      width: 90%;
+
+   }
+   #foodcontainer {
+      grid-template-columns: repeat(2,1fr);
+   }
+}
+
+@media All and (min-width: 50px) and (max-width: 469px) {
+   #meals {
+      width: 95%;
+
+   }
+   #foodcontainer {
+      grid-template-columns: repeat(1,1fr);
+   }
+   #mealsType {
+      gap: 25px;
+   }
+}

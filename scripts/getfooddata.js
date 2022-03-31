@@ -15,6 +15,7 @@ const appendfooddata = (data, parent,who) => {
 
       let title = document.createElement(`P`)
       title.innerText = strMeal
+      title.style.fontWeight = "bold"
 
 
       let money = Math.floor(Math.random() * (250 - 100) + 100)
