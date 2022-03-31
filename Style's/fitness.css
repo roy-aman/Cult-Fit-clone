@@ -46,9 +46,55 @@
   text-decoration: none;
   font-family: "BrandonTextWeb-Regular";
 }
+#cult_center{
+  margin-top: 50px;
+}
+
+#optn{
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  background-color: #6a6a6a;
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+}
+#optn div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  font-weight: bold;
+  justify-content: space-between;
+
+}
+#optn div p{
+  cursor: pointer;
+  color: #fff;
+}
+
+/* pre-loader styling  */
+.site_loader {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  z-index: 9999;
+  justify-content: center;
+}
+
+.site_loader > img {
+  width: 150px;
+  height: 150px;
+}
 
 
-
+#fitBox{
+  margin-top: 50px;
+}
 
 #slideshow img{
     height: 300px;
@@ -163,7 +209,7 @@
   }
   
   .faq {
-    background-color: white;
+    background-color: rgb(240,241,247);
     border-bottom: 1px solid black;
     border-radius: 10px;
     margin: 20px 0;

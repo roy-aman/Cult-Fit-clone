@@ -1,3 +1,10 @@
+// preloader on load
+window.onload = () => {
+  let preLoader = document.querySelector(".site_loader");
+  preLoader.style.display = "none";
+};
+
+
 
 // Set the date we're counting down to
 var countDownDate = new Date("Mar 30, 2023 15:37:25").getTime();
@@ -33,4 +40,18 @@ var x = setInterval(function() {
 
 const book_offer = ()=>{
     window.location.href="../book_offer.html";
+}
+
+const cultFit = ()=>{
+  window.location.href="https://www.cult.fit/lp/Elite_Big400_sale?pageId=Elite_Big400_sale&pageType=listpage";
+}
+
+const offers = ()=>{
+  window.location.href="https://www.cult.fit/lp/Elite_Big400_sale?pageId=Elite_Big400_sale&pageType=listpage";
+ 
+}
+
+const buyOption = ()=>{
+  window.location.href="https://www.cult.fit/cult/cultpack/38?packId=38&forceEnableBuy=true&pageFrom=packbrowse&isSubscriptionPack=false&navigateToNewPackPage=true&pageType=cultpack";
+
 }

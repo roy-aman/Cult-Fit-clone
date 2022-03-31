@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link data-rh="true" rel="icon" href="https://static.cure.fit/assets/images/favicon-modified.png" sizes="16x16"
+        type="image/png" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous" />
     <link rel = "icon" href ="https://static.cure.fit/assets/images/favicon-modified.png" type = "image/x-icon">
 
     <title>Document</title>
@@ -12,13 +20,28 @@
     <link rel="stylesheet" href="./Style's/fitness.css">
 </head>
 <body>
+  <div id="optn">
+    <div>
+     <p style="color: rgb(214, 121, 182); ">Cult Centers</p>
+     <p>Gyms</p>
+     <p>Online PT</p>
+     <p>Cultsport</p>
+ </div> 
+ </div>
+  <!-- preloader  -->
+  <div class="site_loader">
+    <img
+      src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,q_auto:eco,dpr_1.25,f_auto,fl_progressive//image/loader_compressed-v3.gif"
+      alt="loader"
+    />
+  </div>
   <div id="cult_center">
     <div id="addsImage">
-      <img src="./images/d1f6af31-0114-4567-9a44-0635e70bd562.webp" onclick="" alt="">
+      <img src="./images/d1f6af31-0114-4567-9a44-0635e70bd562.webp" onclick="cultFit()" alt="">
     </div>
     <div id="offer">
             
-      <img src="./images/big 400.webp" alt="" >
+      <img src="./images/big 400.webp" onclick="offers()" alt="" >
       <div><p id="demo"></p></div>
   </div>
   <div id="fastest-gym">
@@ -59,10 +82,10 @@
           <div>
             <div>
               <p>12 Months</p>
-              <h4>14990 rs</h4>
+              <h4>16990 rs</h4>
             </div>
             <div style="color: rgb(233, 68, 211);">
-              <h4>Buy</h4>
+              <h4 style="cursor: pointer" onclick="buyOption()">Buy</h4>
             </div>
           </div>
           <div>
@@ -72,11 +95,11 @@
         <div class="pass_box">
           <div>
             <div>
-              <p>12 Months</p>
-              <h4>14990 rs</h4>
+              <p>6 Months</p>
+              <h4>13490 rs</h4>
             </div>
             <div style="color: rgb(224, 75, 162);">
-              <h4>Buy</h4> 
+              <h4 style="cursor: pointer" onclick="buyOption()">Buy</h4> 
             </div>
           </div>
           <div>
@@ -87,10 +110,10 @@
           <div>
             <div>
               <p>12 Months</p>
-              <h4>14990 rs</h4>
+              <h4>9990 rs</h4>
             </div>
             <div style="color: rgb(219, 84, 163);">
-              <h4>Buy</h4>
+              <h4 style="cursor: pointer" onclick="buyOption()">Buy</h4>
             </div>
           </div>
           <div>

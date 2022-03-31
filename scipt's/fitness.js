@@ -1,3 +1,8 @@
+window.reload = () => {
+    let preLoader = document.querySelector(".site_loader");
+    preLoader.style.display = "none";
+  };
+
 // Slide Show---------------------------------
 let  images = ["../images/1.webp","../images/2.webp","../images/3.webp","../images/4.webp","../images/5.webp","../images/6.webp"];
 
@@ -57,12 +62,12 @@ function chang_image(){
         })
         let hvr = document.getElementById("slide");
         hvr.src=images[i];
-        hvr.addEventListener("mouseover",()=>{
-            clearTimeout(timer)
-        })
-        hvr.addEventListener("mouseleave",()=>{
-            location.reload()
-        })
+        // hvr.addEventListener("mouseover",()=>{
+        //     clearTimeout(timer)
+        // })
+        // hvr.addEventListener("mouseleave",()=>{
+        //     chang_image();
+        // })
         
        
 
