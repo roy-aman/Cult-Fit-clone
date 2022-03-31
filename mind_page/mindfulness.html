@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./m_styles/m_common.css">
+</head>
+<body>
+    <div class="head" id="m_head">  </div>
+    <div id="mindfulness_cont">
+
+    </div>
+</body>
+</html>
+
+<script type="module">
+   import { mHead,  } from "./components/commonFun.js"
+
+let navbar = document.getElementById('m_head');
+
+navbar.innerHTML =mHead();
+
+let mf_container = document.getElementById('mindfulness_cont');
+
+
+
+</script>
