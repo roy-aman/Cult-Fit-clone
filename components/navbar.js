@@ -78,7 +78,7 @@ const navbar = () => {
           alt="user"
         />
       </div>
-      <div id="cart">
+      <div id="cart_btn">
         <img
           src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/cart-dark-theme.svg"
           alt="cart"
