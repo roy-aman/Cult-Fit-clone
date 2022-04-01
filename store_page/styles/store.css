@@ -1,7 +1,3 @@
-/* *{
-    border: 2px solid brown;
-    color: black;
-} */
 
 
 .img{
@@ -158,6 +154,7 @@
     }
   } 
 
+
   #sportlight{
     width: fit-content;
     display: flex;
@@ -168,4 +165,5 @@
   #sportlight >img{
     width: 600px;
   }
+
 

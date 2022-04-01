@@ -1,0 +1,695 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap");
+
+/* fonts taken from cult-fit official  */
+@font-face {
+  font-family: "BrandonTextWeb-Medium";
+  font-display: swap;
+  src: url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.eot");
+  src: url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.woff2")
+      format("woff2"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.woff") format("woff"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "BrandonTextWeb-Regular";
+  font-display: swap;
+  src: url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.eot");
+  src: url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.woff2")
+      format("woff2"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.woff") format("woff"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "BrandonTextWeb-Bold";
+  font-display: swap;
+  src: url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.eot");
+  src: url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.woff2")
+      format("woff2"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.woff") format("woff"),
+    url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.ttf")
+      format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "BrandonTextWeb-Regular";
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.hide {
+  display: none !important;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(6px);
+}
+
+/* pre-loader styling  */
+.site_loader {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  z-index: 9999;
+  justify-content: center;
+}
+
+.site_loader > img {
+  width: 150px;
+  height: 150px;
+}
+
+/* navbar styles  */
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #15171c;
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+  user-select: none;
+  transition: transform 0.5s ease;
+}
+
+header > nav {
+  display: flex;
+  width: 96%;
+  height: 100%;
+  margin: auto;
+  color: #fff;
+  z-index: 999999;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > nav > .navbar_logo > a > img {
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+}
+
+header > nav > .middle_nav_links {
+  display: flex;
+  font-size: 18px;
+  margin-left: 60px;
+}
+
+header > nav > .middle_nav_links > div > a {
+  color: #fff;
+  padding: 0px 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  opacity: 70%;
+  transition: opacity 0.25s ease;
+}
+header > nav > .middle_nav_links > div > a:hover {
+  opacity: 90%;
+}
+
+header > nav > .right_nav_links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+}
+
+header > nav > .right_nav_links > div {
+  cursor: pointer;
+}
+
+header > nav > .right_nav_links > #toggle_location > p {
+  text-transform: uppercase;
+}
+
+header > nav > .right_nav_links > div > img {
+  height: 26px;
+  width: 26px;
+}
+
+header > nav > .right_nav_links > #location_container {
+  position: absolute;
+  top: 50px;
+  left: -50px;
+  background-color: rgb(23, 26, 38);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px;
+  height: 433px;
+  width: 280px;
+  overflow: auto;
+}
+
+header > nav > .right_nav_links > #location_container::-webkit-scrollbar {
+  width: 4px;
+}
+
+header > nav > .right_nav_links > #location_container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+header > nav > .right_nav_links > #location_container::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+header > nav > .right_nav_links > #location_container > div:nth-child(1) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;
+  margin: 10px 2px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+header > nav > .right_nav_links > #location_container > div:nth-child(1) > img {
+  height: 17px;
+  width: 17px;
+  margin-right: 8px;
+}
+
+header
+  > nav
+  > .right_nav_links
+  > #location_container
+  > div:nth-child(1)
+  > input {
+  border: none;
+  outline: none;
+  background-color: rgb(23, 26, 38);
+  color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+}
+
+#location_container > .popular_cities > p,
+#location_container > .other_cities > p {
+  text-align: left;
+  cursor: default;
+  margin: 0px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+#location_container > .popular_cities > div,
+#location_container > .other_cities > div {
+  margin-top: 12px;
+}
+
+#location_container > .popular_cities > div > h2,
+#location_container > .other_cities > div > h2 {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 31px;
+  margin-left: 30px;
+  position: relative;
+}
+
+#location_container > .popular_cities > div > h2 > img,
+#location_container > .other_cities > div > h2 > img {
+  width: 20px;
+  position: absolute;
+  left: -30px;
+  height: 15px;
+  min-height: fit-content;
+  overflow: hidden;
+  margin-right: 8px;
+}
+
+header > nav > .right_nav_links > div:nth-child(1) {
+  padding: 8px 18px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+  color: rgb(255 255 255 / 60%);
+}
+
+header > nav > .right_nav_links > div:nth-child(1) > img {
+  margin-left: 10px;
+}
+
+header > nav > .right_nav_links > div:nth-child(1):hover {
+  background-color: rgb(255 255 255 / 10%);
+}
+
+header > nav > .right_nav_links > div:nth-child(3) {
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  transition: all 250ms ease;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-weight: 600;
+}
+
+header > nav > .right_nav_links > div:nth-child(3):hover {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+header > nav > .right_nav_links > div:nth-child(4),
+header > nav > .right_nav_links > div:nth-child(5) {
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 100ms ease;
+}
+
+header > nav > .right_nav_links > div:nth-child(4):hover,
+header > nav > .right_nav_links > div:nth-child(5):hover {
+  background-color: rgb(255 255 255 / 10%);
+}
+
+header > nav > .right_nav_links > div:nth-child(5) > img {
+  width: 22px;
+  height: 22px;
+}
+
+/* login popup styling  */
+
+#user_logged {
+  position: absolute;
+  top: 56px;
+  left: 70px;
+  background-color: #15171c;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 14px;
+  text-align: center;
+  display: none;
+}
+#user_logged > p {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#user_logged > h2 {
+  font-size: 20px;
+}
+
+#user_logged > button {
+  width: 80%;
+  color: #111;
+  background-color: #fff;
+  border: 1px solid transparent;
+  transition: all 250ms ease 0s;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-top: 6px;
+  cursor: pointer;
+  padding: 6px 20px;
+  font-family: Inter, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 700;
+}
+
+#login_popup {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 120vh;
+  z-index: 9999999999;
+  display: none;
+  place-content: center;
+  transition: all 0.5s ease;
+}
+
+#login_popup > div {
+  position: relative;
+  padding: 10px;
+  top: -60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 600px;
+  width: 400px;
+  border-radius: 16px;
+  background-color: black;
+  color: #fff;
+  box-shadow: rgb(0 0 0 / 22%) 0px 13px 24px 0px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  transition: all 0.5s ease;
+}
+#login_popup > .enter_otp {
+  display: flex;
+  height: 350px;
+  gap: 10px;
+  display: none;
+  top: -140px;
+  position: relative;
+  justify-content: space-evenly;
+}
+#login_popup > .enter_otp > .backToLogin {
+  align-self: flex-start;
+  position: absolute;
+  top: 10px;
+  font-size: 26px;
+  cursor: pointer;
+  padding-left: 30px;
+  font-weight: 700;
+}
+#login_popup > .enter_otp > h1 {
+  font-size: 24px;
+}
+#login_popup > .enter_otp > div {
+  width: 80%;
+  padding: 6px;
+}
+
+#login_popup > .enter_otp > div > input {
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+#login_popup > .enter_otp > div > .otp_message {
+  font-size: 18px;
+  padding: 4px 0px;
+}
+
+#login_popup > .enter_otp > button {
+  margin-top: -30px;
+  width: 80%;
+}
+
+#login_popup > .enter_otp > .otp {
+  max-width: 200px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0px;
+}
+#login_popup > .enter_otp > .otp > span {
+  color: crimson;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+#login_popup > div > .close_login {
+  position: relative;
+  left: 42%;
+  font-weight: 700;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms ease;
+}
+
+#login_popup > div > .close_login:hover {
+  color: #fff;
+}
+
+#login_popup > div > .login_logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+#login_popup > div > .login_logo > img:nth-child(1) {
+  height: 75px;
+  width: 75px;
+}
+#login_popup > div > .login_logo > img:nth-child(2) {
+  height: 35px;
+  width: 135px;
+}
+
+#login_popup > div > .login_input {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  width: 90%;
+  padding: 4px;
+}
+#login_popup > div > .login_input > span {
+  font-size: 18px;
+}
+#login_popup > div > .login_input > input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 80%;
+  color: white;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+#login_popup > div > button {
+  width: 90%;
+  border: 1px solid transparent;
+  transition: all 250ms ease 0s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 11.5px 20px;
+  font-family: Inter, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 700;
+  color: crimson;
+  letter-spacing: 1px;
+  cursor: not-allowed;
+  opacity: 50%;
+}
+
+#login_popup > div > button:hover {
+  color: #111;
+}
+
+#login_popup > div > .social {
+  font-family: Inter, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  border: 1px solid transparent;
+  transition: all 250ms ease 0s;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.09);
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 7px 15px;
+  font-weight: 700;
+  width: 90%;
+}
+
+#login_popup > div > .social:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+#login_popup > div > .social > img {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  margin: 0px 10px;
+}
+#login_popup > div > .social > img:nth-child(1) {
+  margin-left: 50px;
+}
+
+#login_popup > div > .conditions {
+  font-size: 13px;
+  width: 70%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+/* cart section styling  */
+
+#cart_popup {
+  top: 65px;
+  width: 320px;
+  position: fixed;
+  box-shadow: rgb(0 0 0 / 22%) 0px 2px 4px 2px;
+  transition: all 0.3s ease-in-out 0s;
+  z-index: 101;
+  right: 0px;
+  bottom: 0px;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  background-color: rgb(23, 26, 38);
+  padding: 16px;
+  padding-bottom: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#cart_popup > .cart_top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  color: white;
+  font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+}
+
+#cart_popup > .cart_mid {
+  display: flex;
+  overflow-y: auto;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(202, 202, 202);
+  font-size: 18px;
+  cursor: default;
+}
+
+#cart_popup > .cart_mid > div {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  margin: 10px 0px;
+}
+
+#cart_popup > .total_items_price {
+  text-align: center;
+  cursor: default;
+  margin: 0px;
+  color: white;
+  font-size: 18px;
+  font-family: Inter, sans-serif;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+#cart_popup > .cart_mid > div > img {
+  width: 113px;
+  height: 113px;
+  border-radius: 6px;
+}
+
+#cart_popup > .cart_mid > div > div {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#cart_popup > .cart_mid > div > div > h4 {
+  font-family: BrandonTextWeb-Medium, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: left;
+  color: #fff;
+}
+
+#cart_popup > .cart_mid > div > div > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cart_popup > .cart_mid > div > div > div > h6 {
+  color: #fff;
+  font-size: 14px;
+}
+
+#cart_popup > .cart_mid > div > div > div > div {
+  width: 80px;
+  background-color: #fff;
+  border: 2px solid #ff3278;
+  color: #000;
+  opacity: 0.87;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 0;
+  height: 32px;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#cart_popup > .cart_mid > div > div > div > div > button {
+  position: relative;
+  top: -5px;
+  left: -3px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: #ff3278;
+  font-size: 40px;
+}
+
+#cart_popup > .cart_mid > div > div > div > div > .incrmt {
+  font-size: 30px;
+  top: -1px;
+}
+
+#cart_popup > .cart_mid > h3 {
+  padding: 10px 0px;
+}
+
+#cart_popup > .cart_mid > p {
+  font-size: 14px;
+}
+
+#cart_popup > button {
+  cursor: pointer;
+  font-family: Inter-Medium, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  border: 1px solid transparent;
+  transition: all 250ms ease 0s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 11.5px 20px;
+  font-weight: 700;
+  width: 100%;
+  color: crimson;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+#cart_popup > button:hover {
+  color: #111;
+}
