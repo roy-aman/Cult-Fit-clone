@@ -9,14 +9,26 @@
    <link rel="icon" href="https://static.cure.fit/assets/images/favicon-modified.png" sizes="16x16" type="image/png"
       data-rh="true">
    <link rel="stylesheet" href="./styles/eatOrder.css">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="./styles/navbar.css">
 </head>
 
 <body id="eatOrderbody">
 
-   <div id="navbar"></div>
+   <!-- preloader  -->
+   <div class="site_loader">
+      <img
+         src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,q_auto:eco,dpr_1.25,f_auto,fl_progressive//image/loader_compressed-v3.gif"
+         alt="loader" />
+   </div>
 
+   <!-- navbar -->
+   <header id="navbar"></header>
+
+   <!-- secondary navbar -->
    <div id="eatnavbar">
       <div><a href="eatOrder.html">Order</a></div>
       <div><a href="mealPlan.html">Meal Plans</a></div>
@@ -25,85 +37,97 @@
    <!-- Slider -->
    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="4000">
-          <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/294cab71-5fc6-4325-962d-cfe5194fa52e.jpeg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" data-bs-interval="4000">
-          <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/bca97aa5-1e30-4db2-9d09-c305c00bf12d.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" data-bs-interval="4000">
-          <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/3883e29f-07c5-448c-a747-45e2f65e32a7.jpg" class="d-block w-100" alt="...">
-        </div>
+         <div class="carousel-item active" data-bs-interval="4000">
+            <img
+               src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/294cab71-5fc6-4325-962d-cfe5194fa52e.jpeg"
+               class="d-block w-100" alt="...">
+         </div>
+         <div class="carousel-item" data-bs-interval="4000">
+            <img
+               src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/bca97aa5-1e30-4db2-9d09-c305c00bf12d.jpg"
+               class="d-block w-100" alt="...">
+         </div>
+         <div class="carousel-item" data-bs-interval="4000">
+            <img
+               src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/3883e29f-07c5-448c-a747-45e2f65e32a7.jpg"
+               class="d-block w-100" alt="...">
+         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+         data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button> 
-   <div id="eatFilterbarContainer">
-      <div id="eatFilterbar">
-         <div id="eatNow">
-            <select>
-               <option value="">EAT NOW</option>
-               <option value="breakfast">TODAY'S BREAKFAST</option>
-               <option value="lunch">TODAY'S LUNCH</option>
-               <option value="snacks">TODAY'S SNACKS</option>
-               <option value="dinner">TODAY'S DINNER</option>
-            </select>
-         </div>
-         <div id="eatFilter">
-            <div>
-               <p id="veg">Veg</p>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+         data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+      </button>
+   </div>
+
+      <div id="eatFilterbarContainer">
+         <div id="eatFilterbar">
+            <div id="eatNow">
+               <select>
+                  <option value="">EAT NOW</option>
+                  <option value="breakfast">TODAY'S BREAKFAST</option>
+                  <option value="lunch">TODAY'S LUNCH</option>
+                  <option value="snacks">TODAY'S SNACKS</option>
+                  <option value="dinner">TODAY'S DINNER</option>
+               </select>
             </div>
-            <div>
-               <img src="https://static.cure.fit/assets/images/filter-black.svg" alt="filter icon">
-               <p>Filter</p>
+            <div id="eatFilter">
+               <div>
+                  <p id="veg">Veg</p>
+               </div>
+               <div>
+                  <img src="https://static.cure.fit/assets/images/filter-black.svg" alt="filter icon">
+                  <p>Filter</p>
+               </div>
             </div>
          </div>
       </div>
-   </div>
 
-   <div id="eatItemContainer">
+      <div id="eatItemContainer">
 
-      <div id="itemlist">
-         <div>Beef</div>
-         <div>Chicken</div>
-         <div>Dessert</div>
-         <div>Lamb</div>
-         <div>Miscellaneous</div>
-         <div>Pasta</div>
-         <div>Pork</div>
-         <div>Seafood</div>
-         <div>Side</div>
-         <div>Starter</div>
-         <div>Vegan</div>
-         <div>Vegetarian</div>
+         <div id="itemlist">
+            <div>Beef</div>
+            <div>Chicken</div>
+            <div>Dessert</div>
+            <div>Lamb</div>
+            <div>Miscellaneous</div>
+            <div>Pasta</div>
+            <div>Pork</div>
+            <div>Seafood</div>
+            <div>Side</div>
+            <div>Starter</div>
+            <div>Vegan</div>
+            <div>Vegetarian</div>
+         </div>
+
+         <!-- Food description -->
+         <div id="itemDescription">
+
+         </div>
       </div>
 
-      <!-- Food description -->
-      <div id="itemDescription">
 
+      <div id="eattags">
+         <p>EAT HEALTHY</p>
+         <p>STAY FIT</p>
       </div>
-   </div>
-   <div id="eattags">
-      <p>EAT HEALTHY</p>
-      <p>STAY FIT</p>
-   </div>
 
-   <div id="footer"></div>
+      <div id="footer"></div>
 </body>
 
 </html>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+   integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+   integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
-<!-- <<<<<<< tapish -->
-<!-- <script src="./scripts/eatOrderSliderData.js"></script> -->
+
+<script src="./script/navFunction.js" type="module"></script>
+
 <script src="./scripts/eatOrder.js" type="module"></script>
-
-<script src="./scripts/eatOrderSliderData.js"></script>
-<script src="./scripts/eatOrder.js"></script>
-

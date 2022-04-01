@@ -1,7 +1,50 @@
+/* fonts taken from cult-fit official  */
+@font-face {
+   font-family: "BrandonTextWeb-Medium";
+   font-display: swap;
+   src: url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.eot");
+   src: url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.eot?#iefix")
+       format("embedded-opentype"),
+     url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.woff2")
+       format("woff2"),
+     url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.woff") format("woff"),
+     url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.ttf")
+       format("truetype");
+ }
+ @font-face {
+   font-family: "BrandonTextWeb-Regular";
+   font-display: swap;
+   src: url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.eot");
+   src: url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.eot?#iefix")
+       format("embedded-opentype"),
+     url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.woff2")
+       format("woff2"),
+     url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.woff") format("woff"),
+     url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.ttf")
+       format("truetype");
+ }
+ @font-face {
+   font-family: "BrandonTextWeb-Bold";
+   font-display: swap;
+   src: url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.eot");
+   src: url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.eot?#iefix")
+       format("embedded-opentype"),
+     url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.woff2")
+       format("woff2"),
+     url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.woff") format("woff"),
+     url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.ttf")
+       format("truetype");
+ }
+
+
 *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+}
+
+#eatnavbar {
+   margin-top: 60px;
 }
 
 #eatnavbar {
