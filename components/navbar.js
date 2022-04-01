@@ -78,6 +78,11 @@ const navbar = () => {
           alt="user"
         />
       </div>
+      <div id="user_logged">
+      <p>X</p>
+      <h2>Hi, you are already logged in.</h2>
+      <button>Log Out</button>
+    </div>
       <div id="cart_btn">
         <img
           src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/cart-dark-theme.svg"
@@ -120,7 +125,8 @@ const navbar = () => {
       <span>+91</span>
       <input type="Number" placeholder="Enter your phone number" />
     </div>
-    <button>CONTINUE</button>
+    <button disabled>CONTINUE</button>
+    
     <p class="social">
       OR CONNECT WITH
       <img
@@ -140,6 +146,16 @@ const navbar = () => {
       * By Continuing you agree to the Terms of Services and Privacy policy.
     </div>
   </div>
+  <div class="enter_otp">
+  <p class="backToLogin">&loarr;</p>
+  <h1>Enter Your OTP</h1>
+  <div class="otp">Your otp is</div>
+  <div>
+    <input type="number" placeholder="Enter OTP here" />
+    <p class="otp_message"></p>
+  </div>
+  <button disabled>CONFIRM</button>
+</div>
 </div>
 
   
