@@ -103,7 +103,7 @@ const navbar = () => {
         <p>Looks like you haven't made any purchases yet</p>
       </div>
       <div class="total_items_price"></div>
-      <button>Back</button>
+      <button id="checkOut">Back</button>
     </div>
     </div>
   </nav>

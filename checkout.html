@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Checkout Cult.fit</title>
+   <link rel="stylesheet" href="./styles/navbar.css">
+
+   <link rel="stylesheet" href="./styles/checkout.css">
+</head>
+<body>
+   <header id="navbar"></header>
+
+   <div id="checkoutContainer">
+      <div id="checkoutItems">
+         <div>
+            <span>Added Items (</span>
+            <span id="totalItems">0</span>
+            <span>)</span>
+         </div>
+         <div id="checkoutDisplay">
+
+         </div>
+         <div>
+            <div>
+               <input type="checkbox" name="" id=""> 
+               <span>I don't want cutlery</span>
+               <p>Refuse cutlery, save ₹3 and go eco-friendly!</p>
+            </div>
+            <div></div>
+         </div>
+      </div>
+      <div id="CheckoutPay">
+         <div>
+            <div class="flexdiv"">
+               <h3>Delivery Address</h3>
+               <p>Edit Address</p>
+            </div>
+            <div>
+               Address
+            </div>
+         </div>
+
+         <div class="flexdiv"">
+            <h3>Delivery Instruction:</h3>
+            <div>No delivery instructions(Call me)</div>
+         </div>
+
+         <div>
+            <h3>Order Info</h3>
+
+            <div class="flexdiv">
+               <div>Item Total</div>
+               <div><span>₹</span><span>0</span></div>
+            </div>
+            <div class="flexdiv">
+               <div>Price Discount</div>
+               <div><span>₹</span><span>0</span></div>
+            </div>
+            <div class="flexdiv">
+               <div>Cart Discount</div>
+               <div><span>₹</span><span>0</span></div>
+            </div>
+            <div class="flexdiv">
+               <div>Delivery charge</div>
+               <div><span>₹</span><span>0</span></div>
+            </div>
+         </div>
+
+         <div class="flexdiv">
+            <h3>Total Payable</h3>
+            <div><span>₹</span><span>0</span></div>
+         </div>
+
+         <div class="flexdiv">
+            <img id="discountimg" src="https://cdn-media.cure.fit/image/payment/discount_green.png" alt="discount">
+            <div><span>Total Saving of ₹</span><span>0</span></div>
+         </div>
+
+         <button id="paybutton">Pay Now</button>
+      </div>
+   </div>
+</body>
+</html>
+
+<script src="./scripts/checkout.js" type="module"></script>
+
+<script src="./script/navFunction.js" type="module"></script>

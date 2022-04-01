@@ -299,4 +299,7 @@ if (cart_items.length > 0) {
   display_cart_data(cart_items);
   show_total();
   cart_buy_button.innerHTML = "Buy Now";
+  cart_buy_button.addEventListener('click', () => {
+    window.location.href = "../checkout.html"
+  })
 }

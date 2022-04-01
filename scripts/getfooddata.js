@@ -70,7 +70,6 @@ const appendfooddata = (data, parent,who) => {
          div.append(image, title, bottomdiv, cartbutton)
          parent.append(div)
       }
-
    })
 }
 
