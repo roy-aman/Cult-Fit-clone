@@ -17,6 +17,38 @@ window.addEventListener("scroll", () => {
   lastScrollTop = scrollTop;
 });
 
+//toggle_mobile_nav
+
+const mobile_nav = document.querySelector(".toggle_mobile_nav");
+const close_mobile_nav = document.querySelector(".close_mobile_nav");
+const toggle_mob_menu = document.querySelector("#mobile_nav_links");
+
+mobile_nav.addEventListener("click", () => {
+  toggle_mob_menu.classList.toggle("mobile_nav_links_active");
+});
+
+close_mobile_nav.addEventListener("click", () => {
+  toggle_mob_menu.classList.remove("mobile_nav_links_active");
+});
+
+const mobile_signin = document.querySelector("#mobile_signin");
+mobile_signin.addEventListener("click", () => {
+  toggle_mob_menu.classList.remove("mobile_nav_links_active");
+  show_login_form();
+});
+
+const mobile_cart = document.querySelector("#mobile_cart");
+mobile_cart.addEventListener("click", () => {
+  toggle_mob_menu.classList.remove("mobile_nav_links_active");
+  cart_popup.classList.toggle("hide");
+});
+
+const mobile_location = document.querySelector("#mobile_location");
+mobile_location.addEventListener("click", () => {
+  popup.classList.toggle("hide");
+  overlay.classList.toggle("overlay");
+});
+
 // location popup
 const location = document.querySelector("#toggle_location");
 const popup = document.querySelector("#location_container");
@@ -25,6 +57,7 @@ const city = document.querySelector("#toggle_location>p");
 
 let city_name = localStorage.getItem("city");
 city.innerHTML = city_name;
+mobile_location.innerHTML = city_name;
 
 location.addEventListener("click", () => {
   popup.classList.toggle("hide");

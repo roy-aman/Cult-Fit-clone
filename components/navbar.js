@@ -1,5 +1,36 @@
 const navbar = () => {
-  return ` <nav>
+  return `
+  <div id="mobile_navbar">
+  <div class="mobile_nav_top">
+    <div class="toggle_mobile_nav">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <a href="./">  <img
+    src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_35,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/curefit-logo-white.svg"
+    alt="logo"
+  /> </a>
+    <div id="mobile_location">Bangalore</div>
+  </div>
+</div>
+<div id="mobile_nav_links">
+  <div>
+  <img
+    src="https://static.cure.fit/assets/images/curefit-v-man-white.svg"
+    alt="logo"
+  />
+  <p class="close_mobile_nav">X</p>
+  </div>
+    <div><a href="./">HOME</a></div>
+    <div><a href="#">CULT</a></div>
+    <div><a href="#">LIVE</a></div>
+    <div><a href="#">CARE</a></div>
+    <div><a href="#">MIND</a></div>
+    <div><a href="#">STORE</a></div>
+    <div><p id="mobile_signin">Sign in</p></div>
+    <div><p id="mobile_cart">Cart</p></div>
+    <div><p>Blog</p></div>
+</div>
+  <nav>
     <div class="navbar_logo">
       <a href="./"><img
         src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_120,ar_3.87,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/vman-and-white-cult-text.png"
