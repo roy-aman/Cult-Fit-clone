@@ -4,7 +4,7 @@ window.reload = () => {
   };
 
 // Slide Show---------------------------------
-let  images = ["../images/1.webp","../images/2.webp","../images/3.webp","../images/4.webp","../images/5.webp","../images/6.webp"];
+let  images = ["https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/949dcfd6-0f48-47ac-babf-ef32bf37fc28.jpg","https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/10c91272-727f-4851-89a0-a0c9968cc8db.jpg","https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/7a2f2b75-2881-4174-8251-579d6439e79a.png","https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/19398fe0-af3e-4c26-b09c-38871a1ba24d.jpg","https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/25e5a67b-aeb3-41a1-ba13-71e498619a67.jpg","https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/8a114cf9-9033-4c19-9780-3cef353b4c73.png"];
 
 
 let btn1 = document.createElement('button');
@@ -114,7 +114,7 @@ var x = setInterval(function() {
 
 
 const book_offer = ()=>{
-    window.location.href="../book_offer.html";
+    window.location.href="https://www.cult.fit/live/cult-live-membership?selectedProductId=CFLIVE_2401&pageType=livefitnessbrowsepage";
 }
 
 
