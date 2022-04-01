@@ -14,12 +14,16 @@
             crossorigin="anonymous" />
     <link rel = "icon" href ="https://static.cure.fit/assets/images/favicon-modified.png" type = "image/x-icon">
 
-    <title>Document</title>
+    <title>CULT</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="./Style's/fitness.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
 </head>
 <body>
+  <!-- navbar section  -->
+  <header id="navbar"></header>
+  <div id="overlay"></div>
   <div id="optn">
     <div>
      <p style="color: rgb(214, 121, 182); ">Cult Centers</p>
@@ -187,9 +191,10 @@
 
 </body>
 </html>
+<script type="module" src="../script/navFunction.js"></script>
 <script src="./scipt's/cult-fit.js"></script>
 <script type="module">
-  import {addFAQ } from "../component/compon.js"
+  import {addFAQ } from "./component/compon.js"
 
 
 let faqDiv = document.getElementById('faq');

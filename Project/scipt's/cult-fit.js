@@ -55,3 +55,10 @@ const buyOption = ()=>{
   window.location.href="https://www.cult.fit/cult/cultpack/38?packId=38&forceEnableBuy=true&pageFrom=packbrowse&isSubscriptionPack=false&navigateToNewPackPage=true&pageType=cultpack";
 
 }
+
+
+
+
+// ---------------------------
+
+

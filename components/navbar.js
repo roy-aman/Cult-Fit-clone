@@ -7,8 +7,8 @@ const navbar = () => {
       /> </a>
     </div>
     <div class="middle_nav_links">
-      <div><a href="#"> CULT </a></div>
-      <div><a href="#"> LIVE </a></div>
+      <div><a href="../Project/cult center.html"> CULT </a></div>
+      <div><a href="../Project/fitness.html"> LIVE </a></div>
       <div><a href="#"> CARE </a></div>
       <div><a href="../eatOrder.html"> EAT </a></div>
       <div><a href="#"> MIND </a></div>
