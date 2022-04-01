@@ -298,6 +298,42 @@ header > nav > .right_nav_links > div:nth-child(5) > img {
 
 /* login popup styling  */
 
+#user_logged {
+  position: absolute;
+  top: 56px;
+  left: 70px;
+  background-color: #15171c;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 14px;
+  text-align: center;
+  display: none;
+}
+#user_logged > p {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#user_logged > h2 {
+  font-size: 20px;
+}
+
+#user_logged > button {
+  width: 80%;
+  color: #111;
+  background-color: #fff;
+  border: 1px solid transparent;
+  transition: all 250ms ease 0s;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-top: 6px;
+  cursor: pointer;
+  padding: 6px 20px;
+  font-family: Inter, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 700;
+}
+
 #login_popup {
   position: fixed;
   top: 0px;
@@ -329,6 +365,65 @@ header > nav > .right_nav_links > div:nth-child(5) > img {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.6);
   transition: all 0.5s ease;
+}
+#login_popup > .enter_otp {
+  display: flex;
+  height: 350px;
+  gap: 10px;
+  display: none;
+  top: -140px;
+  position: relative;
+  justify-content: space-evenly;
+}
+#login_popup > .enter_otp > .backToLogin {
+  align-self: flex-start;
+  position: absolute;
+  top: 10px;
+  font-size: 26px;
+  cursor: pointer;
+  padding-left: 30px;
+  font-weight: 700;
+}
+#login_popup > .enter_otp > h1 {
+  font-size: 24px;
+}
+#login_popup > .enter_otp > div {
+  width: 80%;
+  padding: 6px;
+}
+
+#login_popup > .enter_otp > div > input {
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+#login_popup > .enter_otp > div > .otp_message {
+  font-size: 18px;
+  padding: 4px 0px;
+}
+
+#login_popup > .enter_otp > button {
+  margin-top: -30px;
+  width: 80%;
+}
+
+#login_popup > .enter_otp > .otp {
+  max-width: 200px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0px;
+}
+#login_popup > .enter_otp > .otp > span {
+  color: crimson;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 #login_popup > div > .close_login {
@@ -392,7 +487,8 @@ header > nav > .right_nav_links > div:nth-child(5) > img {
   font-weight: 700;
   color: crimson;
   letter-spacing: 1px;
-  cursor: pointer;
+  cursor: not-allowed;
+  opacity: 50%;
 }
 
 #login_popup > div > button:hover {
