@@ -1,0 +1,282 @@
+/* fonts taken from cult-fit official  */
+@font-face {
+   font-family: "BrandonTextWeb-Medium";
+   font-display: swap;
+   src: url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.eot");
+   src: url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.eot?#iefix")
+       format("embedded-opentype"),
+     url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.woff2")
+       format("woff2"),
+     url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.woff") format("woff"),
+     url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.ttf")
+       format("truetype");
+ }
+ @font-face {
+   font-family: "BrandonTextWeb-Regular";
+   font-display: swap;
+   src: url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.eot");
+   src: url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.eot?#iefix")
+       format("embedded-opentype"),
+     url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.woff2")
+       format("woff2"),
+     url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.woff") format("woff"),
+     url("https://static.cure.fit/assets/fonts/32CF0E_8_0_1.ttf")
+       format("truetype");
+ }
+ @font-face {
+   font-family: "BrandonTextWeb-Bold";
+   font-display: swap;
+   src: url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.eot");
+   src: url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.eot?#iefix")
+       format("embedded-opentype"),
+     url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.woff2")
+       format("woff2"),
+     url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.woff") format("woff"),
+     url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.ttf")
+       format("truetype");
+ }
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+#eatnavbar {
+   margin-top: 60px;
+}
+
+#eatnavbar {
+   position: sticky;
+   background-color: #393a3b;
+   top: 0;
+   left: 0;
+   z-index: 5;
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
+
+#eatnavbar>div {
+   text-align: center;
+   height: 40px;
+   width: 100px;
+   padding: 5px 0;
+}
+
+#eatnavbar>div>a{
+   color: #fff;
+   text-decoration: none;
+   font-size: 18px;
+}
+
+#eatOrderSliderButton {
+   display: flex;
+   height: 30px;
+   width: 60%;
+   margin: auto;
+   padding: 0 15px;
+   justify-content: space-between;
+}
+
+.sliderArrow {
+   width: 15px;
+   height: 15px;
+   padding-top: 5px;
+}
+
+.sliderdot{
+   width: 20px;
+   height: 20px;
+   padding-top: 5px;
+}
+
+
+#eatFilterbar {
+   /* border: 1px solid red; */
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid gray;
+   width: 60%;
+   height: 50px;
+   padding: 10px;
+   margin: 60px auto 0;
+}
+
+#eatNow > select {
+   width: 300px;
+   height: 100%;
+   font-size: 18px;
+   background-color: #DBE5F5;
+}
+
+#eatFilter{
+   /* position: absolute; */
+   display: flex;
+   gap: 30px;
+}
+
+/* <<<<<<< tapish */
+#eatFilter div {
+   cursor: pointer;
+}
+
+#eatFilter>div:first-child>p{
+   width: 50px;
+   height: 25px;
+   font-size: 14px;
+   color: gray;
+   margin-top: 5px;
+   text-align: center;
+   border: 1px solid gray;
+   background-color: #fff;
+}
+#eatFilter>div:last-child{
+   display: flex;
+   gap: 15px;
+}
+
+#eatItemContainer {
+   width: 60%;
+   margin: auto;
+   display: flex;
+}
+
+#itemlist {
+   width: 20%;
+}
+
+#itemlist>div {
+   padding: 10px 0;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+#itemlist>div:hover {
+   border-bottom: 2px solid #ff316d;
+   font-size: 25px;
+}
+
+
+#itemDescription {
+   width: 80%;
+   margin: 10px auto 40px;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 20px;
+}
+
+#fooditemdiv>div {
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   padding: 0 5px;
+}
+
+#fooditemdiv>div:last-child{
+   /* width: 43%; */
+   margin: auto;
+   padding-top: 8px;
+}
+
+#eat {
+   cursor: pointer;
+}
+
+#cart {
+   color: #ff316d;
+   font-size: 18px;
+   font-weight: bold;
+   background-color: #fff;
+   border-radius: 15px;
+
+
+   width: 100px;
+}
+
+#fooditemdiv>img:hover {
+   border: 1px solid red;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#eattags {
+   width: 60%;
+   margin: auto;
+}
+
+#eattags>p{
+   line-height: 1.2;
+   letter-spacing: -0.6px;
+   margin-bottom: 0;
+   font-weight: 600;
+}
+
+#eattags>p:first-child {
+   font-size: 80px;
+   color: #6e6e6e;
+}
+#eattags>p:last-child {
+   font-size: 60px;
+   color: #b2b2b2;
+}
+
+
+
+/* meedia queries */
+
+@media All and (min-width: 1000px) and (max-width: 1800px) {
+   #eatItemContainer {
+      width: 80%;
+   }
+   #itemDescription {
+      grid-template-columns: repeat(3,1fr);
+   }
+   #eatFilterbar {
+      width: 80%;
+   }
+}
+
+@media All and (min-width: 750px) and (max-width: 999px) {
+   #eatItemContainer {
+      width: 95%;
+   }
+   #itemDescription {
+      grid-template-columns: repeat(2,1fr);
+   }
+   #eatFilterbar {
+      width: 95%;
+   }
+}
+
+@media All and (min-width: 500px) and (max-width: 749px) {
+   #eatItemContainer {
+      width: 95%;
+   }
+   #itemDescription {
+      width: 60%;
+      grid-template-columns: repeat(1,1fr);
+   }
+   #eatFilterbar {
+      width: 95%;
+   }
+   #itemlist {
+      width: 40%;
+   }
+}
+
+@media All and (min-width: 50px) and (max-width: 499px) {
+   #eatItemContainer {
+      width: 95%;
+   }
+   #itemDescription {
+      width: 95%;
+      grid-template-columns: repeat(1,1fr);
+   }
+   #eatFilterbar {
+      display: none;
+   }
+   #itemlist {
+      display: none;
+   }
+}
+

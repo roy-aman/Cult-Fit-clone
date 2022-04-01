@@ -129,7 +129,19 @@ const addFAQ= ()=>{
 
 // data for minfulness tab 
 
+// <<<<<<< aman
+const addMindfulness_data=()=>{
 
+    data=[
+        { 
+          descriptions: "",
+          img : ""
+    
+    }
+
+    ]
+
+}
 
 
 export { mHead, getMindExperts, addFAQ};
