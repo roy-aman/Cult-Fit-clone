@@ -699,3 +699,113 @@ header > nav > .right_nav_links > div:nth-child(5) > img {
 #cart_popup > button:hover {
   color: #111;
 }
+
+/* mobile nav  */
+
+#mobile_navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60px;
+  z-index: 9999999;
+  background-color: rgb(23, 26, 38);
+  color: #fff;
+  display: none;
+}
+
+#mobile_navbar > .mobile_nav_top {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mobile_navbar > .mobile_nav_top > a > img {
+  width: 35px;
+  height: 35px;
+  margin-left: 40px;
+}
+
+#mobile_navbar > .mobile_nav_top > div > i {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+#mobile_navbar > .mobile_nav_top > #mobile_location {
+  text-transform: uppercase;
+  font-size: 14px;
+  opacity: 80%;
+}
+
+#mobile_nav_links {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100vh;
+  width: 80vw;
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  padding: 30px 40px;
+  flex-direction: column;
+  gap: 36px;
+  z-index: 99999999;
+  transition: left 250ms ease;
+}
+
+#mobile_nav_links > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#mobile_nav_links > div > .close_mobile_nav {
+  font-size: 20px;
+}
+
+#mobile_nav_links > div > a {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: BrandonTextWeb-Regular, Helvetica Neue, Helvetica, Roboto, Arial,
+    sans-serif;
+  color: white;
+}
+#mobile_nav_links > div > p {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: BrandonTextWeb-Regular, Helvetica Neue, Helvetica, Roboto, Arial,
+    sans-serif;
+  color: white;
+  opacity: 0.7;
+  margin-bottom: -16px;
+}
+
+@media All and (min-width: 50px) and (max-width: 769px) {
+  header {
+    background-color: transparent;
+  }
+  .mobile_nav_links_active {
+    left: 0 !important;
+    transition: left 250ms ease;
+  }
+  #cart_popup {
+    left: 0;
+    width: 100%;
+  }
+
+  #user_logged {
+    top: 62px;
+    width: 194px;
+    left: -844px;
+  }
+  #mobile_navbar {
+    display: block;
+  }
+
+  header > nav > .right_nav_links > #location_container {
+    top: 50px;
+    left: -753px;
+  }
+}
