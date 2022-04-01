@@ -14,6 +14,7 @@ const removefromcart = (cartdata,el) => {
    cartdata = temp
    localStorage.setItem('cart', JSON.stringify(cartdata))
    display(cartdata)
+   window.location.reload();
 }
 
 const increaseqty = (el) => {
