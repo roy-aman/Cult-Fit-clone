@@ -8,8 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=2.0">
 <!-- <<<<<<< aman -->
 
+
     <link data-rh="true" rel="icon" href="https://static.cure.fit/assets/images/favicon-modified.png" sizes="16x16"
         type="image/png" />
+
+         <!-- import for FAQ  -->
+         <link rel="preconnect" href="https://fonts.gstatic.com" />
+         <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet" />
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+             integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+             crossorigin="anonymous" />
+
 
         <title>
             cult.fit - Health food | fitness | Meditation
@@ -19,6 +28,7 @@
 
     <link rel="stylesheet" href="../mind_page/m_styles/m_common.css">
     <link rel="stylesheet" href="./styles/store.css">
+    <link rel="stylesheet" href="../mind_page/m_styles/mind.css">
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
@@ -183,7 +193,12 @@
        <section>
            
        </section>
+
     </div>   
+    <br><br/>
+
+    <!-- FAQ section -->
+    <div id="faq">   </div>
 
 
 </body>
@@ -191,7 +206,10 @@
 </html>
 <script type="module">
 
+import { mHead,addFAQ } from "../mind_page/components/commonFun.js"
     import navbar from "../mind_page/components/navbar.js";
+console.log(navbar());
+console.log(addFAQ());
 
     const header = document.querySelector("#navbar");
 
@@ -307,67 +325,68 @@
     });
 
 
-    var slideIndex, slides, dots;
-    function slider() {
-        slideIndex = 0;
-        slides = document.querySelectorAll(".imageContainer");
-        slides[slideIndex].style.opacity = 1;
+// for slider section 
+    // var slideIndex, slides, dots;
+    // function slider() {
+    //     slideIndex = 0;
+    //     slides = document.querySelectorAll(".imageContainer");
+    //     slides[slideIndex].style.opacity = 1;
 
-        dots = [];
-        var dotContainer = document.querySelector("#dotsContainer");
+    //     dots = [];
+    //     var dotContainer = document.querySelector("#dotsContainer");
 
-        for (var i = 0; i < slides.length; i++) {
-            var dot = document.createElement("span");
-            dot.classList.add("dots");
-            dot.setAttribute("onclick", "autoSlider(" + i + ")")
-            dotContainer.append(dot);
-            dots.push(dot);
-        }
-        console.log(dots[slideIndex]);
-        dots[slideIndex].style.backgroundColor = "red";
-    }
-    slider();
-    function plusSlides(n) {
-        autoSlider(slideIndex + n);
-    }
-    function autoSlider(n) {
-        var i, currentSlide, nextSlide
-        var autoSliderAnimationClass = {
-            forCurrent: "",
-            forNext: ""
+    //     for (var i = 0; i < slides.length; i++) {
+    //         var dot = document.createElement("span");
+    //         dot.classList.add("dots");
+    //         dot.setAttribute("onclick", "autoSlider(" + i + ")")
+    //         dotContainer.append(dot);
+    //         dots.push(dot);
+    //     }
+    //     console.log(dots[slideIndex]);
+    //     dots[slideIndex].style.backgroundColor = "red";
+    // }
+    // slider();
+    // function plusSlides(n) {
+    //     autoSlider(slideIndex + n);
+    // }
+    // function autoSlider(n) {
+    //     var i, currentSlide, nextSlide
+    //     var autoSliderAnimationClass = {
+    //         forCurrent: "",
+    //         forNext: ""
 
-        }
-        if (n > slideIndex) {
-            if (n >= slides.length) [
-                n = 0
-            ]
-            autoSliderAnimationClass.forCurrent = "moveLeftCurrentSlide"
-            autoSliderAnimationClass.forNext = "moveLeftNextSlide"
-            // slideIndex=1;
-        }
-        else if (n < slideIndex) {
-            if (n < 0) {
-                n = slides.length - 1
-            }
-            autoSliderAnimationClass.forCurrent = "moveRightCurrentSlide"
-            autoSliderAnimationClass.forNext = "moveRightNextSlide"
+    //     }
+    //     if (n > slideIndex) {
+    //         if (n >= slides.length) [
+    //             n = 0
+    //         ]
+    //         autoSliderAnimationClass.forCurrent = "moveLeftCurrentSlide"
+    //         autoSliderAnimationClass.forNext = "moveLeftNextSlide"
+    //         // slideIndex=1;
+    //     }
+    //     else if (n < slideIndex) {
+    //         if (n < 0) {
+    //             n = slides.length - 1
+    //         }
+    //         autoSliderAnimationClass.forCurrent = "moveRightCurrentSlide"
+    //         autoSliderAnimationClass.forNext = "moveRightNextSlide"
 
-        }
-        if (n != slideIndex) {
-            nextSlide = slides[n];
-            currentSlide = slides[slideIndex];
-            for (i = 0; i < slides.length; i++) {
-                slides[i].className = "imageContainer";
-                slides[i].style.opacity = 0;
-                dots[i].style.backgroundColor = "pink";
+    //     }
+    //     if (n != slideIndex) {
+    //         nextSlide = slides[n];
+    //         currentSlide = slides[slideIndex];
+    //         for (i = 0; i < slides.length; i++) {
+    //             slides[i].className = "imageContainer";
+    //             slides[i].style.opacity = 0;
+    //             dots[i].style.backgroundColor = "pink";
 
-            }
-            currentSlide.classList.add(autoSliderAnimationClass.forCurrent);
-            nextSlide.classList.add(autoSliderAnimationClass.forNext);
-            dots[n].style.backgroundColor = "skyblue";
-            slideIndex = n;
-        }
-    }
+    //         }
+    //         currentSlide.classList.add(autoSliderAnimationClass.forCurrent);
+    //         nextSlide.classList.add(autoSliderAnimationClass.forNext);
+    //         dots[n].style.backgroundColor = "skyblue";
+    //         slideIndex = n;
+    //     }
+    // }
 
 
     var timer = null;
@@ -509,6 +528,31 @@ function setTimer()
     },5000)
 }
 setTimer();
+
+
+
+ // FAQ section 
+
+ let faqDiv = document.getElementById('faq');
+
+    console.log(addFAQ());
+    faqDiv.innerText="helllo everyoen"
+    faqDiv.innerHTML = addFAQ();
+
+    var toggles = document.querySelectorAll(".faq-toggle");
+    var titles = document.querySelectorAll(".faq-title");
+
+    toggles.forEach((toggle) => {
+        toggle.addEventListener("click", () => {
+            toggle.parentNode.classList.toggle("active");
+        });
+    });
+    titles.forEach((title) => {
+        title.addEventListener("click", () => {
+            title.parentNode.classList.toggle("active");
+        });
+    });
+
 
 
 </script>
