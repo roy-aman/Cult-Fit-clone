@@ -123,12 +123,13 @@ const addFAQ= ()=>{
                 <i class="fas fa-times"></i>
             </button>
         </div>
-    </div>`
+    </div> `
 }
 
 
 // data for minfulness tab 
 
+// <<<<<<< aman
 const addMindfulness_data=()=>{
 
     data=[
@@ -141,7 +142,6 @@ const addMindfulness_data=()=>{
     ]
 
 }
-
 
 
 export { mHead, getMindExperts, addFAQ};

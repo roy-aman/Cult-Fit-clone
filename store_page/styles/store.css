@@ -1,7 +1,13 @@
+/* <<<<<<< aman */
 /* *{
     border: 2px solid brown;
     color: black;
 } */
+/* *{
+    border: 2px solid brown;
+    color: black;
+} */
+
 
 
 .img{
@@ -157,3 +163,17 @@
       opacity: 1;
     }
   } 
+
+
+  #sportlight{
+    width: fit-content;
+    display: flex;
+    gap: 2px;
+   
+
+  }
+  #sportlight >img{
+    width: 600px;
+  }
+
+
