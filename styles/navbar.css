@@ -146,6 +146,7 @@ header > nav > .right_nav_links > div {
 
 header > nav > .right_nav_links > #toggle_location > p {
   text-transform: uppercase;
+  margin: 0 !important;
 }
 
 header > nav > .right_nav_links > div > img {
