@@ -81,7 +81,8 @@ const addtocart = (strMeal,strMealThumb,money) => {
    let obj = {
       name : strMeal,
       image : strMealThumb,
-      price : money
+      price : money,
+      qty:1
    } 
    cartdata.push(obj)
    // console.log(cartdata)
