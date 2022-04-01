@@ -201,6 +201,10 @@ const cart_btn = document.querySelector("#cart_btn");
 const close_cart = document.querySelector(".close_cart");
 const cart_popup = document.querySelector("#cart_popup");
 const cart_mid = document.querySelector("#cart_popup > .cart_mid");
+const total_items_price = document.querySelector(
+  "#cart_popup > .total_items_price"
+);
+const cart_buy_button = document.querySelector("#cart_popup > button");
 
 cart_btn.addEventListener("click", () => {
   cart_popup.classList.toggle("hide");
@@ -212,8 +216,9 @@ close_cart.addEventListener("click", () => {
 
 const cart_items = JSON.parse(localStorage.getItem("cart")) || [];
 
-if (cart_items.length > 0) {
-  cart_items.map((el) => {
+const display_cart_data = (data) => {
+  cart_mid.innerHTML = null;
+  data.map((el, index) => {
     let div = document.createElement("div");
 
     let img = document.createElement("img");
@@ -227,13 +232,22 @@ if (cart_items.length > 0) {
 
     let div3 = document.createElement("div");
     let dec = document.createElement("button");
+    dec.className = "decrmt";
     dec.innerHTML = "-";
+    dec.addEventListener("click", () => {
+      decrease_qty(index);
+    });
 
     let qty = document.createElement("span");
-    qty.innerHTML = "1";
+    qty.className = "qty";
+    qty.innerHTML = el.qty;
 
     let inc = document.createElement("button");
+    inc.className = "incrmt";
     inc.innerHTML = "+";
+    inc.addEventListener("click", () => {
+      increase_qty(index);
+    });
 
     div2.append(dec, qty, inc);
 
@@ -248,4 +262,41 @@ if (cart_items.length > 0) {
 
     cart_mid.append(div);
   });
+};
+
+const increase_qty = (index) => {
+  cart_items[index].qty++;
+  localStorage.setItem("cart", JSON.stringify(cart_items));
+  display_cart_data(cart_items);
+  show_total();
+};
+
+const decrease_qty = (index) => {
+  cart_items[index].qty--;
+  if (cart_items[index].qty == 0) {
+    cart_items.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(cart_items));
+    display_cart_data(cart_items);
+    show_total();
+  }
+  localStorage.setItem("cart", JSON.stringify(cart_items));
+  display_cart_data(cart_items);
+  show_total();
+  if (cart_items.length == 0) {
+    window.location.reload();
+  }
+};
+
+const show_total = () => {
+  let total = cart_items.reduce((acc, elem) => {
+    return acc + elem.price * elem.qty;
+  }, 0);
+
+  total_items_price.innerHTML = `${cart_items.length} items - ₹${total}`;
+};
+
+if (cart_items.length > 0) {
+  display_cart_data(cart_items);
+  show_total();
+  cart_buy_button.innerHTML = "Buy Now";
 }

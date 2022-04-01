@@ -564,13 +564,102 @@ header > nav > .right_nav_links > div:nth-child(5) > img {
 
 #cart_popup > .cart_mid {
   display: flex;
-  width: 70%;
+  overflow-y: auto;
+  width: 100%;
   margin: auto;
   text-align: center;
   flex-direction: column;
   align-items: center;
   color: rgb(202, 202, 202);
   font-size: 18px;
+  cursor: default;
+}
+
+#cart_popup > .cart_mid > div {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  margin: 10px 0px;
+}
+
+#cart_popup > .total_items_price {
+  text-align: center;
+  cursor: default;
+  margin: 0px;
+  color: white;
+  font-size: 18px;
+  font-family: Inter, sans-serif;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+#cart_popup > .cart_mid > div > img {
+  width: 113px;
+  height: 113px;
+  border-radius: 6px;
+}
+
+#cart_popup > .cart_mid > div > div {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#cart_popup > .cart_mid > div > div > h4 {
+  font-family: BrandonTextWeb-Medium, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: left;
+  color: #fff;
+}
+
+#cart_popup > .cart_mid > div > div > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cart_popup > .cart_mid > div > div > div > h6 {
+  color: #fff;
+  font-size: 14px;
+}
+
+#cart_popup > .cart_mid > div > div > div > div {
+  width: 80px;
+  background-color: #fff;
+  border: 2px solid #ff3278;
+  color: #000;
+  opacity: 0.87;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 0;
+  height: 32px;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#cart_popup > .cart_mid > div > div > div > div > button {
+  position: relative;
+  top: -5px;
+  left: -3px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: #ff3278;
+  font-size: 40px;
+}
+
+#cart_popup > .cart_mid > div > div > div > div > .incrmt {
+  font-size: 30px;
+  top: -1px;
 }
 
 #cart_popup > .cart_mid > h3 {

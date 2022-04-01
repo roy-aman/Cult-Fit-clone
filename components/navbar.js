@@ -102,6 +102,7 @@ const navbar = () => {
         <h3>Your cart is empty</h3>
         <p>Looks like you haven't made any purchases yet</p>
       </div>
+      <div class="total_items_price"></div>
       <button>Back</button>
     </div>
     </div>
