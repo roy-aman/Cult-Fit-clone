@@ -573,6 +573,11 @@ header > nav > .right_nav_links > div:nth-child(5) > img {
   color: rgb(202, 202, 202);
   font-size: 18px;
   cursor: default;
+  padding: 10px 0px;
+}
+
+#cart_popup > .cart_mid::-webkit-scrollbar {
+  width: 2px;
 }
 
 #cart_popup > .cart_mid > div {
@@ -590,7 +595,7 @@ header > nav > .right_nav_links > div:nth-child(5) > img {
   font-size: 18px;
   font-family: Inter, sans-serif;
   letter-spacing: 0.5px;
-  margin-bottom: 10px;
+  margin: 10px 0px;
 }
 
 #cart_popup > .cart_mid > div > img {
