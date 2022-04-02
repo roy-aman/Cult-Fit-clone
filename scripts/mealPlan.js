@@ -6,6 +6,10 @@ window.onload = () => {
    preLoader.style.display = "none";
 };
 
+// footer
+import footer from "../components/footer.js"
+document.querySelector(`#footer`).innerHTML = footer()
+
 // Initial food data added
 let fooddata = await getfooddata(`https://www.themealdb.com/api/json/v1/1/search.php?f=k`)
 let parent = document.querySelector(`#foodcontainer`)
