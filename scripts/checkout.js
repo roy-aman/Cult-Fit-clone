@@ -1,6 +1,41 @@
 let cartdata = JSON.parse(localStorage.getItem('cart'))
 
-  
+
+let discount = Math.floor(Math.random()*(50-10)+10);
+
+document.getElementById("discountp").innerText=discount;
+
+
+let del_charge =Math.floor(Math.random()*(60-20)+20);
+document.getElementById("delcharge").innerText=del_charge;
+
+
+let cutlery = document.getElementById("check");
+
+cutlery.addEventListener("click",()=>{
+   pricecal();
+})
+const pricecal =()=>{
+   let totalPrice = cartdata.reduce(function (accumulator, item) {
+      return accumulator + (item.price*item.qty);
+    }, 0);
+   document.getElementById("totalp").innerText = totalPrice;
+
+   let totalpay  = totalPrice+del_charge-discount;
+   document.getElementById("totalpay").innerText=totalpay;
+
+   let cutlery = document.getElementById("check").checked;
+   if(cutlery==true){
+      document.getElementById("saving").innerText=discount+3;
+   }
+   else{
+      document.getElementById("saving").innerText=discount;
+   }
+   
+}
+pricecal();
+
+
 let parent = document.querySelector(`#checkoutDisplay`)
 
 const removefromcart = (cartdata,el) => {
@@ -21,15 +56,18 @@ const increaseqty = (el) => {
    el.qty++
    localStorage.setItem('cart', JSON.stringify(cartdata))
    display(cartdata)
+   pricecal();
 }
 
 const decreaseqty = (el) => {
    if(el.qty === 0) {
+      pricecal();
       return
    }
    el.qty--
    localStorage.setItem('cart', JSON.stringify(cartdata))
    display(cartdata)
+   pricecal();
    
 }
 
