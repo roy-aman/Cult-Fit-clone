@@ -629,3 +629,13 @@ main > #home_section > .right_home > div > .audio_icon > img:hover {
     font-size: 40px;
   }
 }
+
+@media All and (min-width: 820px) and (max-width: 1180px) {
+  main > #home_section {
+    margin-top: 80px;
+    flex-direction: column;
+  }
+  main > #home_section > .left_home {
+    width: 100%;
+  }
+}
