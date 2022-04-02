@@ -1,8 +1,6 @@
-/* *{
-    border: 2px solid brown;
-    color: black;
-} */
-
+*{
+  border: 2px solid brown;
+}
 
 .img{
     width: 100%;
@@ -12,11 +10,13 @@
 #container{
     width: 80%;
     margin: auto;
+    
 }
 
-.container {
+#containerForCateg {
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    gap: 15px;
 }
 .container2{
     display: grid;
@@ -157,3 +157,17 @@
       opacity: 1;
     }
   } 
+
+
+  #sportlight{
+    width: fit-content;
+    display: flex;
+    gap: 2px;
+   
+
+  }
+  #sportlight >img{
+    width: 600px;
+  }
+
+

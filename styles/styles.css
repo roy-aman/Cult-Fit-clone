@@ -486,11 +486,156 @@ main > #home_section > .right_home > div > .audio_icon > img:hover {
 #BBE_tag > h1 {
   font-size: 100px;
   color: #6e6e6e;
+  font-weight: 400;
   font-family: BrandonTextWeb-Bold, sans-serif;
 }
 
 #BBE_tag > h2 {
   font-size: 80px;
   color: #b2b2b2;
+  font-weight: 400;
   font-family: BrandonTextWeb-Bold, sans-serif;
+}
+
+@media All and (min-width: 50px) and (max-width: 769px) {
+  main > #home_section {
+    margin-top: 80px;
+    flex-direction: column;
+  }
+  main > #home_section > .left_home {
+    width: 100%;
+  }
+
+  main > #home_section > .right_home > div > .audio_icon > img {
+    top: -34px;
+    left: 88%;
+    width: 26px;
+    height: 23px;
+  }
+
+  #cult_section,
+  #live_section,
+  #sport_section,
+  #mind_section,
+  #care_section,
+  #eat_section {
+    margin-top: 20px;
+  }
+
+  .cult_container > div > img {
+    width: 70px;
+  }
+
+  .cult_container > div > .sport_image {
+    width: 140px;
+  }
+
+  main > #home_section > .left_home > .title_first,
+  main > #home_section > .left_home > .title_last {
+    font-size: 30px;
+  }
+
+  main > #home_section > .left_home > .desc {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .cult_container > #cult_image_section,
+  .cult_container > #live_image_section,
+  .cult_container > #sport_image_section,
+  .cult_container > #mind_image_section,
+  .cult_container > #care_image_section,
+  .cult_container > #eat_image_section {
+    height: auto;
+  }
+
+  .cult_container > div:nth-child(2) > p,
+  .cult_container > div:nth-child(2) > a,
+  .cult_container > div:nth-child(2) > a > span {
+    font-size: 17px;
+  }
+
+  .cult_container > #cult_image_section > ul,
+  .cult_container > #live_image_section > ul,
+  .cult_container > #sport_image_section > ul,
+  .cult_container > #mind_image_section > ul,
+  .cult_container > #care_image_section > ul,
+  .cult_container > #eat_image_section > ul {
+    flex-direction: column;
+  }
+
+  .cult_container > #cult_image_section > ul > li > img,
+  .cult_container > #live_image_section > ul > li > img,
+  .cult_container > #sport_image_section > ul > li > img,
+  .cult_container > #mind_image_section > ul > li > img,
+  .cult_container > #care_image_section > ul > li > img,
+  .cult_container > #eat_image_section > ul > li > img {
+    height: 16em;
+  }
+
+  .cult_container > #cult_image_section > ul > li > div,
+  .cult_container > #live_image_section > ul > li > div,
+  .cult_container > #sport_image_section > ul > li > div,
+  .cult_container > #mind_image_section > ul > li > div,
+  .cult_container > #care_image_section > ul > li > div,
+  .cult_container > #eat_image_section > ul > li > div {
+    width: 170px;
+    font-size: 12px;
+    gap: 26px;
+  }
+
+  .cult_container > #cult_image_section > ul > li > div > p,
+  .cult_container > #cult_image_section > ul > li > div > button,
+  .cult_container > #live_image_section > ul > li > div > p,
+  .cult_container > #live_image_section > ul > li > div > button,
+  .cult_container > #sport_image_section > ul > li > div > p,
+  .cult_container > #sport_image_section > ul > li > div > button,
+  .cult_container > #mind_image_section > ul > li > div > p,
+  .cult_container > #mind_image_section > ul > li > div > button,
+  .cult_container > #care_image_section > ul > li > div > p,
+  .cult_container > #care_image_section > ul > li > div > button,
+  .cult_container > #eat_image_section > ul > li > div > p,
+  .cult_container > #eat_image_section > ul > li > div > button {
+    opacity: 1;
+  }
+
+  .cult_btn {
+    font-size: 10px;
+  }
+
+  #getApp {
+    height: auto;
+  }
+
+  #getApp > .getApp_container > div > h3 {
+    font-size: 28px;
+    margin-top: 40px;
+  }
+
+  #getApp > .getApp_container {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  #getApp > .getApp_container > img {
+    width: 200px;
+    height: 250px;
+  }
+  #BBE_tag > h1 {
+    font-size: 50px;
+  }
+
+  #BBE_tag > h2 {
+    font-size: 40px;
+  }
+}
+
+@media All and (min-width: 820px) and (max-width: 1180px) {
+  main > #home_section {
+    margin-top: 80px;
+    flex-direction: column;
+  }
+  main > #home_section > .left_home {
+    width: 100%;
+  }
 }

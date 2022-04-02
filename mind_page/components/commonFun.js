@@ -35,8 +35,8 @@ const getMindExperts = ()=>{
 const addFAQ= ()=>{
 
     return ` 
-    <h1>FAQS</h1>
-    <h1>some important questions</h1>
+    <h2>FAQS</h2>
+    <h4>some important questions</h4>
     <div class="faq-container">
         <div class="faq">
             <h3 class="faq-title"> Is therapy for me?</h3>
@@ -123,12 +123,13 @@ const addFAQ= ()=>{
                 <i class="fas fa-times"></i>
             </button>
         </div>
-    </div>`
+    </div> `
 }
 
 
 // data for minfulness tab 
 
+// <<<<<<< aman
 const addMindfulness_data=()=>{
 
     data=[
@@ -141,7 +142,6 @@ const addMindfulness_data=()=>{
     ]
 
 }
-
 
 
 export { mHead, getMindExperts, addFAQ};

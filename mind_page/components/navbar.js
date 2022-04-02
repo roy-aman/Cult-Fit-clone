@@ -1,45 +1,14 @@
 const navbar = () => {
-  return `
-  <div id="mobile_navbar">
-  <div class="mobile_nav_top">
-    <div class="toggle_mobile_nav">
-      <i class="fa-solid fa-bars"></i>
-    </div>
-    <a href="./">  <img
-    src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_35,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/curefit-logo-white.svg"
-    alt="logo"
-  /> </a>
-    <div id="mobile_location">Bangalore</div>
-  </div>
-</div>
-<div id="mobile_nav_links">
-  <div>
-  <img
-    src="https://static.cure.fit/assets/images/curefit-v-man-white.svg"
-    alt="logo"
-  />
-  <p class="close_mobile_nav">X</p>
-  </div>
-    <div><a href="./">HOME</a></div>
-    <div><a href="#">CULT</a></div>
-    <div><a href="#">LIVE</a></div>
-    <div><a href="#">CARE</a></div>
-    <div><a href="#">MIND</a></div>
-    <div><a href="#">STORE</a></div>
-    <div><p id="mobile_signin">Sign in</p></div>
-    <div><p id="mobile_cart">Cart</p></div>
-    <div><p>Blog</p></div>
-</div>
-  <nav>
+  return ` <nav>
     <div class="navbar_logo">
       <a href="./"><img
         src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_120,ar_3.87,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/vman-and-white-cult-text.png"
-        alt="logo" id="return_home"
+        alt="logo"
       /> </a>
     </div>
     <div class="middle_nav_links">
-      <div><a href="../Project/cult center.html"> CULT </a></div>
-      <div><a href="../Project/fitness.html"> LIVE </a></div>
+      <div><a href="#"> CULT </a></div>
+      <div><a href="#"> LIVE </a></div>
       <div><a href="#"> CARE </a></div>
       <div><a href="../eatOrder.html"> EAT </a></div>
       <div><a href="#"> MIND </a></div>
@@ -109,12 +78,7 @@ const navbar = () => {
           alt="user"
         />
       </div>
-      <div id="user_logged">
-      <p>X</p>
-      <h2>Hi, you are already logged in.</h2>
-      <button>Log Out</button>
-    </div>
-      <div id="cart_btn">
+      <div id="cart">
         <img
           src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/cart-dark-theme.svg"
           alt="cart"
@@ -133,8 +97,7 @@ const navbar = () => {
         <h3>Your cart is empty</h3>
         <p>Looks like you haven't made any purchases yet</p>
       </div>
-      <div class="total_items_price"></div>
-      <button id="checkOut">Back</button>
+      <button>Back</button>
     </div>
     </div>
   </nav>
@@ -157,8 +120,7 @@ const navbar = () => {
       <span>+91</span>
       <input type="Number" placeholder="Enter your phone number" />
     </div>
-    <button disabled>CONTINUE</button>
-    
+    <button>CONTINUE</button>
     <p class="social">
       OR CONNECT WITH
       <img
@@ -178,16 +140,6 @@ const navbar = () => {
       * By Continuing you agree to the Terms of Services and Privacy policy.
     </div>
   </div>
-  <div class="enter_otp">
-  <p class="backToLogin">&loarr;</p>
-  <h1>Enter Your OTP</h1>
-  <div class="otp">Your otp is</div>
-  <div>
-    <input type="number" placeholder="Enter OTP here" />
-    <p class="otp_message"></p>
-  </div>
-  <button disabled>CONFIRM</button>
-</div>
 </div>
 
   

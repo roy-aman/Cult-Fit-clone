@@ -1,15 +1,23 @@
-
 import { getfooddata, appendfooddata } from "./getfooddata.js"
 
+// preloader on load
+window.onload = () => {
+   let preLoader = document.querySelector(".site_loader");
+   preLoader.style.display = "none";
+};
+
+// footer
+import footer from "../components/footer.js"
+document.querySelector(`#footer`).innerHTML = footer()
+
+// Initial food data added
 let fooddata = await getfooddata(`https://www.themealdb.com/api/json/v1/1/search.php?f=k`)
-
 let parent = document.querySelector(`#foodcontainer`)
-
 appendfooddata(fooddata, parent, "mealPlans")
 
 
+// Data append changed to select different food
 const changeSelect = async(x) => {
-   // console.log(1)
    let elem = document.getElementById(x)
    if(x === 'breakfast') {
       fooddata = await getfooddata(`https://www.themealdb.com/api/json/v1/1/search.php?f=k`)
@@ -35,10 +43,10 @@ const changeSelect = async(x) => {
    } else {
       document.getElementById('dinner').style.borderBottom = "3px solid white"
    }
-
    appendfooddata(fooddata, parent, "mealPlans")
 }
 
+// Red underline shift
 let type = document.querySelectorAll(`#mealsType>div`)
 // console.log(type)
 

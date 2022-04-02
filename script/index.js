@@ -4,6 +4,10 @@ window.onload = () => {
   preLoader.style.display = "none";
 };
 
+// footer
+import footer from "../components/footer.js";
+document.querySelector(`#footer`).innerHTML = footer();
+
 // video mute and unmute
 const audio_unmute = document.querySelector(".audio_icon > img");
 audio_unmute.addEventListener("click", () => {

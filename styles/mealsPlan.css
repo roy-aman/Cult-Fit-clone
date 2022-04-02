@@ -7,9 +7,14 @@
 
 }
 
+#mealTitle {
+   margin-top: 10px;
+}
+
 #mealsType {
    display: flex;
    gap: 50px;
+   padding-top: 5px;
 }
 #mealsType > div {
    cursor: pointer;
