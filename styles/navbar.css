@@ -809,3 +809,48 @@ header > nav > .right_nav_links > div:nth-child(5) > img {
     left: -753px;
   }
 }
+
+@media All and (min-width: 540px) and (max-width: 720px) {
+  header > nav > .right_nav_links > #location_container {
+    top: 50px;
+    left: -592px;
+  }
+}
+
+@media All and (min-width: 820px) and (max-width: 1180px) {
+  header {
+    background-color: transparent;
+  }
+  .mobile_nav_links_active {
+    left: 0 !important;
+    transition: left 250ms ease;
+  }
+  #cart_popup {
+    left: 0;
+    width: 100%;
+  }
+
+  #user_logged {
+    top: 62px;
+    width: 194px;
+    left: -844px;
+  }
+  #mobile_navbar {
+    display: block;
+  }
+
+  header > nav > .right_nav_links > #location_container {
+    top: 50px;
+    left: -318px;
+  }
+  #mobile_nav_links > div > a {
+    font-size: 30px;
+  }
+  #mobile_nav_links > div > p {
+    font-size: 30px;
+  }
+
+  #mobile_nav_links > div > .close_mobile_nav {
+    font-size: 35px;
+  }
+}
