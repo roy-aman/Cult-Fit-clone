@@ -75,6 +75,6 @@ function setTimer()
     timer = setInterval(function ()
     {
         plusSlides(1);
-    },5000)
+    },2000)
 }
 setTimer();
