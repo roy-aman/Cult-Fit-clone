@@ -29,8 +29,9 @@
 
     <link rel="stylesheet" href="../mind_page/m_styles/m_common.css">
     <link rel="stylesheet" href="./styles/store.css">
-    <link rel="stylesheet" href="../mind_page/m_styles/mind.css">
+    <!-- <link rel="stylesheet" href="../mind_page/m_styles/mind.css"> -->
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
@@ -178,17 +179,18 @@
 <script type="module">
 
     import { mHead, addFAQ } from "../mind_page/components/commonFun.js"
-    import navbar from "../mind_page/components/navbar.js";
+    import navbar from "../components/navbar.js";
+    import footer from "../components/footer.js";
     console.log(addFAQ());
    
     // footer
-    import footer from "../components/footer.js";
+ 
     document.querySelector(`#footer`).innerHTML = footer();
 
 
-    const header = document.querySelector("#navbar");
-
+    
     // navbar section
+    const header = document.querySelector("#navbar");
     header.innerHTML = navbar();
 
     // preloader on load

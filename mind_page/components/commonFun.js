@@ -3,7 +3,7 @@ const mHead= ()=>{
 
     return ` 
       <div><a href="mind.html"> Therapy </a></div>
-      <div><a href="mindfulness.html">Mindfulness</a></div>
+      <div><a href="mind.html">Mindfulness</a></div>
     `;
 }
 

@@ -7,12 +7,12 @@ const navbar = () => {
       /> </a>
     </div>
     <div class="middle_nav_links">
-      <div><a href="#"> CULT </a></div>
-      <div><a href="#"> LIVE </a></div>
-      <div><a href="#"> CARE </a></div>
+      <div><a href="../index.html"> CULT </a></div>
+      <div><a href="../fitness.html"> LIVE </a></div>
+      <div><a href="../care_page/care.html"> CARE </a></div>
       <div><a href="../eatOrder.html"> EAT </a></div>
-      <div><a href="#"> MIND </a></div>
-      <div><a href="#"> STORE </a></div>
+      <div><a href="mind.html"> MIND </a></div>
+      <div><a href="../store_page/store.html"> STORE </a></div>
     </div>
     <div class="right_nav_links">
       <div id="toggle_location">
