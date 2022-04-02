@@ -126,8 +126,7 @@
 #offer{
     background-color: rgb(236,236,236);
     width: 80%;
-    margin: auto;
-    
+    margin: auto; 
 }
 #demo{
     display: flex;
