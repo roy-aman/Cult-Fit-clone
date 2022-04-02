@@ -281,18 +281,18 @@ header > nav > .right_nav_links > div:nth-child(3):hover {
 }
 
 header > nav > .right_nav_links > div:nth-child(4),
-header > nav > .right_nav_links > div:nth-child(5) {
+header > nav > .right_nav_links > div:nth-child(6) {
   padding: 10px;
   border-radius: 50%;
   transition: all 100ms ease;
 }
 
 header > nav > .right_nav_links > div:nth-child(4):hover,
-header > nav > .right_nav_links > div:nth-child(5):hover {
+header > nav > .right_nav_links > div:nth-child(6):hover {
   background-color: rgb(255 255 255 / 10%);
 }
 
-header > nav > .right_nav_links > div:nth-child(5) > img {
+header > nav > .right_nav_links > div:nth-child(6) > img {
   width: 22px;
   height: 22px;
 }
