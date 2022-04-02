@@ -1,3 +1,12 @@
+
+  
+  // footer & header
+  import footer from "../components/footer.js";
+import navbar from "../components/navbar.js";
+
+  document.querySelector(`#footer`).innerHTML = footer();
+    document.getElementById('navbar').innerHTML=navbar();
+
 var slideIndex,slides,dots;
 function slider()
 {

@@ -2,6 +2,13 @@
   border: 2px solid blueviolet;
 } */
 /* <<<<<<< aman */
+
+
+body {
+  max-width: 100%
+}
+
+
 body,
 html {
   overflow-x: visible;
@@ -16,94 +23,52 @@ body {
   background-color: #fff
 }
 
-body {
-  max-width: 100%
-}
-
-body {
-  margin: 0
-}
-
 .head {
-  /* width: 100%;
+ width: 100%;
+  height: 50px;
+  background-color: #393a3b;
+  display: flex;
+  gap: 50px;
+  color: aliceblue;
+  justify-content: center;
+  position: fixed;
+  margin-top: -8px;
+}
 
-body, html {
-    overflow-x: visible;
-    font-family: BrandonTextWeb-Regular,Helvetica Neue, Helvetica, Roboto, Arial, sans-serif
-  }
-  body {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143; color: #333; background-color: #fff
-  }
-  body { max-width: 100% }
-  body { margin: 0 }
 
-       .head{
 
-           height: 50px;
-          background-color: #393a3b;
-          display: flex;
-          gap: 50px;
-           color: aliceblue;
-          justify-content:center;
-         position: fixed; */
-
-/* <<<<<<< aman */
+.head>div {
   position: sticky;
   background-color: #393a3b;
   top: 0;
   left: 0;
   z-index: 5;
   display: flex;
+  padding: 10px 0;
   justify-content: center;
   gap: 8%;
 }
 
-.head>div {
+/* .head>div {
 
-  /* 
-
-         position: sticky;
-         background-color: #393a3b;
-         top: 0;
-         left: 0;
-         z-index: 5;
-         display: flex;
-         justify-content: center;
-         gap: 8%;
-      }
-
-      .head > div{
-
-          /* 
-          height: fit-content;
-          padding: 2px;
-          margin: 15px;
-          background-color: #393a3b;
-          border: none;
-          color: aliceblue;
-          font-size: 105%;  
-          text-align: center;           */
-/* <<<<<<< aman */
   width: auto;
   text-align: center;
-  /* height: 50px;  */
+  height: 50px; 
   width: 100px;
   padding: 10px 0;
-}
+} */
 
- .head>div>a {
+.head>div>a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
-  /* text-decoration: none */
+  text-decoration: none
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap");
 
 /* fonts taken from cult-fit official  */
- @font-face {
+@font-face {
   font-family: "BrandonTextWeb-Medium";
   font-display: swap;
   src: url("https://static.cure.fit/assets/fonts/32CF0E_9_0_1.eot");
@@ -131,7 +96,7 @@ body, html {
     url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.woff2") format("woff2"),
     url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.woff") format("woff"),
     url("https://static.cure.fit/assets/fonts/32CF0E_2_0_1.ttf") format("truetype");
-} 
+}
 
 /* * {
   margin: 0;
@@ -159,7 +124,7 @@ body {
   left: 0;
   top: 0;
   backdrop-filter: blur(6px);
-} 
+}
 
 /* pre-loader styling  */
 .site_loader {
@@ -602,15 +567,15 @@ header>nav>.right_nav_links>div:nth-child(5)>img {
 
 #cart_popup>button:hover {
   color: #111;
-          width: auto;
-          text-align: center;
-          height: 30px;
-          /* width: 100px; */
-          padding: 10px 0;
-      }
-    
-     .head>div>a{
-        color: #fff;
-        text-decoration: none;
-        font-size: 18px;
-     }
+  width: auto;
+  text-align: center;
+  height: 30px;
+  /* width: 100px; */
+  padding: 10px 0;
+}
+
+.head>div>a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}

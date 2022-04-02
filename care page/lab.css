@@ -1,6 +1,6 @@
 #nav{
     height:80px;
-    width:1333px;
+    width:100%;
     background-color: dimgrey;
     justify-content: center;
     color:white;
@@ -13,7 +13,7 @@
 }
 .img{
     height:250px;
-    width:1333px;
+    width:100%;
 }
  
 #p1{
