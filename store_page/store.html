@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="../mind_page/m_styles/m_common.css">
     <link rel="stylesheet" href="./styles/store.css">
     <link rel="stylesheet" href="../mind_page/m_styles/mind.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -165,16 +167,24 @@
     <!-- FAQ section -->
     <div id="faq"> </div>
 
+     <!-- footer section  -->
+     <div id="footer"></div>
+    
 
 </body>
 
+<script src="../mind_page/scripts/navFunction.js"></script>
 </html>
 <script type="module">
 
     import { mHead, addFAQ } from "../mind_page/components/commonFun.js"
     import navbar from "../mind_page/components/navbar.js";
-    console.log(navbar());
     console.log(addFAQ());
+   
+    // footer
+    import footer from "../components/footer.js";
+    document.querySelector(`#footer`).innerHTML = footer();
+
 
     const header = document.querySelector("#navbar");
 
@@ -293,29 +303,29 @@
 
 // SLIDER FUNCTIONS
 
-    var slideIndex,slides,dots;
-    function slider()
-    {
-        slideIndex=0;
-        slides = document.querySelectorAll(".imageContainer");
-        slides[slideIndex].style.opacity=1;
+    // var slideIndex,slides,dots;
+    // function slider()
+    // {
+    //     slideIndex=0;
+    //     slides = document.querySelectorAll(".imageContainer");
+    //     slides[slideIndex].style.opacity= 1.0;
 
-        dots=[];
-        var dotContainer=document.querySelector("#dotsContainer");
+    //     dots=[];
+    //     var dotContainer=document.querySelector("#dotsContainer");
 
-        for(var i=0;i<slides.length;i++)
-        {
-            var dot = document.createElement("span");
-            dot.classList.add("dots");
-            dot.setAttribute("onclick","autoSlider("+i+")")
-            dotContainer.append(dot);
-            dots.push(dot);
-        }
-        console.log(dots[slideIndex]);
-        dots[slideIndex].style.backgroundColor="red";
-    }
+    //     for(var i=0;i<slides.length;i++)
+    //     {
+    //         var dot = document.createElement("span");
+    //         dot.classList.add("dots");
+    //         dot.setAttribute("onclick","autoSlider("+i+")")
+    //         dotContainer.append(dot);
+    //         dots.push(dot);
+    //     }
+    //     console.log(dots[slideIndex]);
+    //     dots[slideIndex].style.backgroundColor="red";
+    // }
 
-    slider();
+    // slider();
 
 
     function plusSlides(n)
@@ -367,15 +377,15 @@
     }
 
 
-    // var timer=null;
-    // function setTimer()
-    // {
-    //     timer = setInterval(function ()
-    //     {
-    //         plusSlides(1);
-    //     },3000)
-    // }
-    // setTimer();
+    var timer=null;
+    function setTimer()
+    {
+        timer = setInterval(function ()
+        {
+            plusSlides(1);
+        },3000)
+    }
+    setTimer();
 
 
 
@@ -384,7 +394,7 @@
     let faqDiv = document.getElementById('faq');
 
     console.log(addFAQ());
-    faqDiv.innerText = "helllo everyoen"
+    // faqDiv.innerText = "helllo everyoen"
     faqDiv.innerHTML = addFAQ();
 
     var toggles = document.querySelectorAll(".faq-toggle");
