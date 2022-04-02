@@ -25,7 +25,7 @@
   <header id="navbar"></header>
   <div id="overlay"></div>
   <div id="optn">
-    <div>
+    <div id="cult_nav">
      <p style="color: rgb(214, 121, 182); ">Cult Centers</p>
      <p>Gyms</p>
      <p>Online PT</p>
@@ -194,6 +194,14 @@
 <script type="module" src="../script/navFunction.js"></script>
 <script src="./scipt's/cult-fit.js"></script>
 <script type="module">
+  
+  let home = document.getElementById('return_home');
+  home.addEventListener("click",()=>{
+    windo.location.href="../index.html"
+  })
+
+
+
   import {addFAQ } from "./component/compon.js"
 
 

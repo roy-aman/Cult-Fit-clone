@@ -58,6 +58,7 @@
   margin-top: -50px;
   display: flex;
   justify-content: center;
+  z-index: 9998;
 }
 #optn div{
   display: flex;
@@ -66,6 +67,7 @@
   width: 40%;
   font-weight: bold;
   justify-content: space-between;
+  
 
 }
 #optn div p{
