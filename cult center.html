@@ -19,6 +19,7 @@
 
     <link rel="stylesheet" href="./Style's/fitness.css">
     <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css" />
 </head>
 <body>
   <!-- navbar section  -->
@@ -188,12 +189,16 @@
     <h1 style="font-size: 40px; color: rgb(175, 175, 175);">AN EVERYDAY ATHLETE</h1>
   </div>
   <div id="faq"></div>
-
+  <div id="footer"></div>
 </body>
 </html>
 <script type="module" src="../script/navFunction.js"></script>
 <script src="./scipt's/cult-fit.js"></script>
 <script type="module">
+
+      // footer
+import footer from "../components/footer.js";
+document.querySelector(`#footer`).innerHTML = footer()
   
   let home = document.getElementById('return_home');
   home.addEventListener("click",()=>{
