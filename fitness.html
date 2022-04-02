@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./Style's/fitness.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css" />
 
 </head>
 
@@ -25,6 +26,7 @@
     <!-- navbar section  -->
   <header id="navbar"></header>
   <div id="overlay"></div>
+   <!-- Sub Nav bar -->
     <div id="optn">
            <div>
             <p style="color: rgb(214, 121, 182);"> Fitness</p>
@@ -173,11 +175,20 @@
 
         <div id="faq"></div>
 
+
+        <!-- footer -->
+
+        <div id="footer"></div>
 </body>
 </html>
 <script type="module" src="../script/navFunction.js"></script>
 <script src="./scipt's/fitness.js"></script>
 <script type="module">
+    // footer
+import footer from "../components/footer.js";
+document.querySelector(`#footer`).innerHTML = footer()
+
+// question and answer
     import {addFAQ } from "./component/compon.js"
 
 

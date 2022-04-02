@@ -27,6 +27,14 @@ const navbar = () => {
     <div><a href="./mind_page/mind.html">MIND</a></div>
     <div><a href="./store_page/store.html">STORE</a></div>
 
+
+    <div><a href="./">HOME</a></div>
+    <div><a href="">CULT</a></div>
+    <div><a href="#">LIVE</a></div>
+    <div><a href="#">CARE</a></div>
+    <div><a href="#">MIND</a></div>
+    <div><a href="#">STORE</a></div>
+
     <div><p id="mobile_signin">Sign in</p></div>
     <div><p id="mobile_cart">Cart</p></div>
     <div><p>Blog</p></div>
@@ -35,12 +43,12 @@ const navbar = () => {
     <div class="navbar_logo">
       <a href="./"><img
         src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_120,ar_3.87,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/vman-and-white-cult-text.png"
-        alt="logo" id="return_home"
+        alt="logo" 
       /> </a>
     </div>
     <div class="middle_nav_links">
-      <div><a href="../Project/cult center.html"> CULT </a></div>
-      <div><a href="../Project/fitness.html"> LIVE </a></div>
+      <div><a href="../cult center.html"> CULT </a></div>
+      <div><a href="../fitness.html"> LIVE </a></div>
       <div><a href="#"> CARE </a></div>
       <div><a href="../eatOrder.html"> EAT </a></div>
       <div><a href="#"> MIND </a></div>
@@ -189,10 +197,9 @@ const navbar = () => {
   </div>
   <button disabled>CONFIRM</button>
 </div>
-</div>
-
-  
-  `;
+</div> 
+  `
+    ;
 };
 
 export default navbar;
