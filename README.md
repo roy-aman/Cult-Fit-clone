@@ -2,8 +2,9 @@
 This project is a clone of cult- fit  website which is a well known Indian Fitness website from where we can buy different fitness and gym products and services also from this wesite you can buy meals which is healthy for you.
 
 ⚙️Tech Stack : The tech Stack we used for creating this website are :-
-To create this project we used HTML, CSS, JavaScript and BootStrap and Some External APIS.
-Our Project is based on orignal cult.fit website which includes almost every functionalities of this website.
+
+To create this project we used HTML, CSS, JavaScript, BootStrap and Some External APIS.
+Our Project is based on orignal https://www.cult.fit/ website which includes almost every functionalities of this website.
 
 Project Deploy🔗 Link : https://charming-kleicha-f7531f.netlify.app/
 
