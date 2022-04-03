@@ -20,7 +20,7 @@ const navbar = () => {
   />
   <p class="close_mobile_nav">X</p>
   </div>
-    <div><a href="./index.html">HOME</a></div>
+    <div><a href="./">HOME</a></div>
     <div><a href="./cultCenter.html">CULT</a></div>
     <div><a href="./fitness.html">LIVE</a></div>
     <div><a href="./care.html">CARE</a></div>
@@ -42,7 +42,6 @@ const navbar = () => {
     <div class="middle_nav_links">
       <div><a href="./cultCenter.html"> CULT </a></div>
       <div><a href="./fitness.html"> LIVE </a></div>
-      <div><a href="./cultCenter.html"> CULT </a></div>
       <div><a href="./care.html"> CARE </a></div>
       <div><a href="./eatOrder.html"> EAT </a></div>
       <div><a href="./mind.html"> MIND </a></div>
@@ -192,7 +191,7 @@ const navbar = () => {
   <button disabled>CONFIRM</button>
 </div>
 </div> 
-  ` ;
+  `;
 };
 
 export default navbar;
