@@ -54,7 +54,7 @@ const increaseqty = (el) => {
 };
 
 const decreaseqty = (el) => {
-  if (el.qty === 0) {
+  if (el.qty === 1) {
     pricecal();
     return;
   }
@@ -63,18 +63,6 @@ const decreaseqty = (el) => {
   display(cartdata);
   pricecal();
 };
-   if(el.qty === 1) {
-      removefromcart(cartdata,el)
-
-      pricecal();
-      return
-   }
-   el.qty--
-   localStorage.setItem('cart', JSON.stringify(cartdata))
-   display(cartdata)
-   pricecal();
-   
-}
 
 const itemCounter = (cartdata) => {
   let count = 0;
@@ -171,8 +159,6 @@ go_to_payment.addEventListener("click", () => {
   window.location.href = "./payment.html";
 });
 
-
-
 // for adress --------------------------
 const adress = document.querySelector("#adres");
 // const close_login = document.querySelector(".close_login");
@@ -181,10 +167,9 @@ adress.addEventListener("click", () => {
   show_address_form();
 });
 
-
-const show_address_form = ()=>{
-   const adress = document.querySelector("#addres");
-   adress.innerHTML=`<div>
+const show_address_form = () => {
+  const adress = document.querySelector("#addres");
+  adress.innerHTML = `<div>
    <div class="row">
       <div class="col-75">
         <div class="container">
@@ -223,9 +208,5 @@ const show_address_form = ()=>{
         </div>
       </div>
    </div>
-</div>`
-}
-
-   
-
-
+</div>`;
+};
