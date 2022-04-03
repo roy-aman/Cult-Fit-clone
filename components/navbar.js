@@ -28,13 +28,6 @@ const navbar = () => {
     <div><a href="./store_page/store.html">STORE</a></div>
 
 
-    <div><a href="./">HOME</a></div>
-    <div><a href="">CULT</a></div>
-    <div><a href="#">LIVE</a></div>
-    <div><a href="#">CARE</a></div>
-    <div><a href="#">MIND</a></div>
-    <div><a href="#">STORE</a></div>
-
     <div><p id="mobile_signin">Sign in</p></div>
     <div><p id="mobile_cart">Cart</p></div>
     <div><p>Blog</p></div>
@@ -47,8 +40,8 @@ const navbar = () => {
       /> </a>
     </div>
     <div class="middle_nav_links">
-      <div><a href="../cult center.html"> CULT </a></div>
-      <div><a href="../fitness.html"> LIVE </a></div>
+      <div><a href="./cultCenter.html"> CULT </a></div>
+      <div><a href="./fitness.html"> LIVE </a></div>
       <div><a href="#"> CARE </a></div>
       <div><a href="../eatOrder.html"> EAT </a></div>
       <div><a href="#"> MIND </a></div>
@@ -198,8 +191,7 @@ const navbar = () => {
   <button disabled>CONFIRM</button>
 </div>
 </div> 
-  `
-    ;
+  `;
 };
 
 export default navbar;
