@@ -96,6 +96,19 @@
    padding: 10px;
 }
 
+#CheckoutPay  h3 {
+   margin-bottom: 8px;
+}
+
+#CheckoutPay > div {
+   margin: 20px 0;
+   border-bottom: 1px solid rgb(201, 193, 193);
+}
+
+#CheckoutPay > div > div{
+   margin: 5px 0;
+}
+
 .flexdiv {
    display: flex;
    justify-content: space-between;
@@ -103,6 +116,7 @@
 
 #discountimg {
    width: 25px;
+   padding-bottom: 10px;
 }
 
 #paybutton {
@@ -111,4 +125,9 @@
    background-color: #FF2E73;
    color: #fff;
    font-size: 18px;
+}
+
+#recfood {
+   border-top: 1px solid rgb(201, 193, 193);;
+   margin-top: 30px;
 }
