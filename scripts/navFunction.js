@@ -230,113 +230,113 @@ const startTimer = (time, otp) => {
 
 // cart popup
 
-const cart_btn = document.querySelector("#cart_btn");
-const close_cart = document.querySelector(".close_cart");
-const cart_popup = document.querySelector("#cart_popup");
-const cart_mid = document.querySelector("#cart_popup > .cart_mid");
-const total_items_price = document.querySelector(
-  "#cart_popup > .total_items_price"
-);
-const cart_buy_button = document.querySelector("#cart_popup > button");
+// const cart_btn = document.querySelector("#cart_btn");
+// const close_cart = document.querySelector(".close_cart");
+// const cart_popup = document.querySelector("#cart_popup");
+// const cart_mid = document.querySelector("#cart_popup > .cart_mid");
+// const total_items_price = document.querySelector(
+//   "#cart_popup > .total_items_price"
+// );
+// const cart_buy_button = document.querySelector("#cart_popup > button");
 
-cart_btn.addEventListener("click", () => {
-  cart_popup.classList.toggle("hide");
-});
+// cart_btn.addEventListener("click", () => {
+//   cart_popup.classList.toggle("hide");
+// });
 
-close_cart.addEventListener("click", () => {
-  cart_popup.classList.add("hide");
-});
+// close_cart.addEventListener("click", () => {
+//   cart_popup.classList.add("hide");
+// });
 
-const cart_items = JSON.parse(localStorage.getItem("cart")) || [];
+// const cart_items = JSON.parse(localStorage.getItem("cart")) || [];
 
-const display_cart_data = (data) => {
-  cart_mid.innerHTML = null;
-  data.map((el, index) => {
-    let div = document.createElement("div");
+// const display_cart_data = (data) => {
+//   cart_mid.innerHTML = null;
+//   data.map((el, index) => {
+//     let div = document.createElement("div");
 
-    let img = document.createElement("img");
-    img.src = el.image;
+//     let img = document.createElement("img");
+//     img.src = el.image;
 
-    let div1 = document.createElement("div");
-    let name = document.createElement("h4");
-    name.innerHTML = el.name;
+//     let div1 = document.createElement("div");
+//     let name = document.createElement("h4");
+//     name.innerHTML = el.name;
 
-    let div2 = document.createElement("div");
+//     let div2 = document.createElement("div");
 
-    let div3 = document.createElement("div");
-    let dec = document.createElement("button");
-    dec.className = "decrmt";
-    dec.innerHTML = "-";
-    dec.addEventListener("click", () => {
-      decrease_qty(index);
-    });
+//     let div3 = document.createElement("div");
+//     let dec = document.createElement("button");
+//     dec.className = "decrmt";
+//     dec.innerHTML = "-";
+//     dec.addEventListener("click", () => {
+//       decrease_qty(index);
+//     });
 
-    let qty = document.createElement("span");
-    qty.className = "qty";
-    qty.innerHTML = el.qty;
+//     let qty = document.createElement("span");
+//     qty.className = "qty";
+//     qty.innerHTML = el.qty;
 
-    let inc = document.createElement("button");
-    inc.className = "incrmt";
-    inc.innerHTML = "+";
-    inc.addEventListener("click", () => {
-      increase_qty(index);
-    });
+//     let inc = document.createElement("button");
+//     inc.className = "incrmt";
+//     inc.innerHTML = "+";
+//     inc.addEventListener("click", () => {
+//       increase_qty(index);
+//     });
 
-    div2.append(dec, qty, inc);
+//     div2.append(dec, qty, inc);
 
-    let price = document.createElement("h6");
-    price.innerHTML = `₹${el.price}`;
+//     let price = document.createElement("h6");
+//     price.innerHTML = `₹${el.price}`;
 
-    div3.append(div2, price);
+//     div3.append(div2, price);
 
-    div1.append(name, div3);
+//     div1.append(name, div3);
 
-    div.append(img, div1);
+//     div.append(img, div1);
 
-    cart_mid.append(div);
-  });
-};
+//     cart_mid.append(div);
+//   });
+// };
 
-const increase_qty = (index) => {
-  cart_items[index].qty++;
-  localStorage.setItem("cart", JSON.stringify(cart_items));
-  display_cart_data(cart_items);
-  show_total();
-};
+// const increase_qty = (index) => {
+//   cart_items[index].qty++;
+//   localStorage.setItem("cart", JSON.stringify(cart_items));
+//   display_cart_data(cart_items);
+//   show_total();
+// };
 
-const decrease_qty = (index) => {
-  cart_items[index].qty--;
-  if (cart_items[index].qty == 0) {
-    cart_items.splice(index, 1);
-    localStorage.setItem("cart", JSON.stringify(cart_items));
-    display_cart_data(cart_items);
-    show_total();
-  }
-  localStorage.setItem("cart", JSON.stringify(cart_items));
-  display_cart_data(cart_items);
-  show_total();
-  if (cart_items.length == 0) {
-    window.location.reload();
-  }
-};
+// const decrease_qty = (index) => {
+//   cart_items[index].qty--;
+//   if (cart_items[index].qty == 0) {
+//     cart_items.splice(index, 1);
+//     localStorage.setItem("cart", JSON.stringify(cart_items));
+//     display_cart_data(cart_items);
+//     show_total();
+//   }
+//   localStorage.setItem("cart", JSON.stringify(cart_items));
+//   display_cart_data(cart_items);
+//   show_total();
+//   if (cart_items.length == 0) {
+//     window.location.reload();
+//   }
+// };
 
-const show_total = () => {
-  let total = cart_items.reduce((acc, elem) => {
-    return acc + elem.price * elem.qty;
-  }, 0);
+// const show_total = () => {
+//   let total = cart_items.reduce((acc, elem) => {
+//     return acc + elem.price * elem.qty;
+//   }, 0);
 
-  total_items_price.innerHTML = `${cart_items.length} items - ₹${total}`;
-};
+//   total_items_price.innerHTML = `${cart_items.length} items - ₹${total}`;
+// };
 
-if (cart_items.length > 0) {
-  display_cart_data(cart_items);
-  show_total();
-  cart_buy_button.innerHTML = "Buy Now";
-  cart_buy_button.addEventListener("click", () => {
-    window.location.href = "../checkout.html";
-  });
-} else {
-  cart_buy_button.addEventListener("click", () => {
-    window.location.href = "../eatOrder.html";
-  });
-}
+// if (cart_items.length > 0) {
+//   display_cart_data(cart_items);
+//   show_total();
+//   cart_buy_button.innerHTML = "Buy Now";
+//   cart_buy_button.addEventListener("click", () => {
+//     window.location.href = "../checkout.html";
+//   });
+// } else {
+//   cart_buy_button.addEventListener("click", () => {
+//     window.location.href = "../eatOrder.html";
+//   });
+// }
