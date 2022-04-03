@@ -40,12 +40,13 @@ const navbar = () => {
       /> </a>
     </div>
     <div class="middle_nav_links">
-      <div><a href="../cultCenter.html"> CULT </a></div>
-      <div><a href="../fitness.html"> LIVE </a></div>
-      <div><a href="../care.html"> CARE </a></div>
-      <div><a href="../eatOrder.html"> EAT </a></div>
-      <div><a href="../mind.html"> MIND </a></div>
-      <div><a href="../store.html"> STORE </a></div>
+      <div><a href="./cultCenter.html"> CULT </a></div>
+      <div><a href="./fitness.html"> LIVE </a></div>
+      <div><a href="./cultCenter.html"> CULT </a></div>
+      <div><a href="./care.html"> CARE </a></div>
+      <div><a href="./eatOrder.html"> EAT </a></div>
+      <div><a href="./mind.html"> MIND </a></div>
+      <div><a href="./store.html"> STORE </a></div>
     </div>
     <div class="right_nav_links">
       <div id="toggle_location">
