@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      data-rh="true"
+      rel="icon"
+      href="https://static.cure.fit/assets/images/favicon-modified.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/payment.css" />
+    <title>Cult.fit payment</title>
+  </head>
+  <body>
+    <div class="site_loader">
+      <img
+        src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,q_auto:eco,dpr_1.25,f_auto,fl_progressive//image/loader_compressed-v3.gif"
+        alt="loader"
+      />
+    </div>
+
+    <header id="navbar"></header>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Please Enter Correct Account Details</p>
+      </div>
+    </div>
+
+    <div id="myModal1" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <!-- <span class="close">&times;</span> -->
+        <p>Your order was Successfully Placed</p>
+        <h4>Redirecting to The HomePage</h4>
+      </div>
+    </div>
+    <!-- modal finished -->
+
+    <div id="container">
+      <div id="payInfo">Payment Information</div>
+
+      <div id="imgCarts" style="width: 465px">
+        <img
+          src="https://ztransaction.bongous.com/static/css/images/pm/visa.png"
+          style="margin-right: 5px"
+        /><img
+          src="https://ztransaction.bongous.com/static/css/images/pm/mastercard.png"
+          style="margin-right: 5px"
+        /><img
+          src="https://ztransaction.bongous.com/static/css/images/pm/bitcoin.png"
+          style="margin-right: 5px"
+        />
+      </div>
+
+      <div id="cardType">
+        <span>Card Type <span style="color: red">*</span> </span>
+        <select>
+          <option>Select..</option>
+          <option>Visa</option>
+          <option>MasterCard</option>
+          <option>BitCoin</option>
+          <option>Audi</option>
+        </select>
+      </div>
+      <form id="form">
+        <div class="cardType">
+          <span>Name on Card <span style="color: red">*</span></span>
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter Card details"
+            value=""
+          />
+        </div>
+        <div class="cardType">
+          <span>Card number<span style="color: red">*</span></span>
+          <input id="cardno" type="number" placeholder="Enter Card number" />
+        </div>
+        <div class="cardType">
+          <span id="scvv">CVV<span style="color: red">*</span></span>
+          <input type="text" id="cvv" placeholder="Enter CVV" />
+        </div>
+        <span id="makeP">Click to Make Payment </span>
+        <input type="submit" value="Make Payment" id=" makepayment" />
+      </form>
+    </div>
+  </body>
+  <script src="./script/navFunction.js" type="module"></script>
+  <script src="./scripts/payment.js"></script>
+</html>
