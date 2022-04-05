@@ -6,7 +6,7 @@ This project is a clone of cult- fit  website which is a well known Indian Fitne
 To create this project we used HTML, CSS, JavaScript, BootStrap and Some External APIS.
 Our Project is based on orignal https://www.cult.fit/ website which includes almost every functionalities of this website.
 
-📲Responsive : Our website is responsive as well✌️.
+📲Responsiveness : Our website is responsive as well✌️.
 
 Project Deploy🔗 Link : https://charming-kleicha-f7531f.netlify.app/
 
