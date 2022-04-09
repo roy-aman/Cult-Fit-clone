@@ -11,7 +11,7 @@ _A fitness movement that is worth breaking a sweat for_
 
 At cult.fit, we strive to keep you fit & healthy through a range of servises that includes fitness and yoga, healthy meals, mental wellbeing and primary health care. Become healthy from the safety of your homes with cult fit that helps you to #BeBetterEveryDay #WeAreCult 
 
-> In this project we have tried to clone frontend of cult.fit. Cart functinality has been added using browser's localstorage. Project design is responsive for all screen sizes. This project is an effort to implement learning at masai and improve our understanding of the web world.  Through this website we are trying to influence life style of millions by providing assistance in inproving your physical and mental health. Our fitness and eat page will give everything to keep you fit and care and mind page will help with mental and primary health care.
+> In this project we have tried to clone frontend of cult.fit. Cart functionality has been added using browser's localstorage. Project design is responsive for all screen sizes. This project is an effort to implement learning at masai and improve our understanding of the web world.  Through this website we are trying to influence life style of people by providing assistance in improving there physical and mental health. Our fitness and eat page will give help to keep you fit and care and mind page will help with mental and primary health care.
 
 <hr>
 <h3> Tech Stack </h3>
