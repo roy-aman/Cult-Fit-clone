@@ -1,26 +1,53 @@
-# Cult-Fit-clone Project
-This project is a clone of cult- fit  website which is a well known Indian Fitness website from where we can buy different fitness and gym products and services also from this wesite you can buy meals which is healthy for you.
+<h1>Cult-Fit-clone</h1>
 
-⚙️Tech Stack : The tech Stack we used for creating this website are :-
+_A fitness movement that is worth breaking a sweat for_
+<!-- <hr> -->
 
-To create this project we used HTML, CSS, JavaScript, BootStrap and Some External APIS.
-Our Project is based on orignal https://www.cult.fit/ website which includes almost every functionalities of this website.
+<h3> Deployment link </h3>
 
-📲Responsiveness : Our website is responsive as well✌️.
+<a href="https://charming-kleicha-f7531f.netlify.app/" target="_blank">https://charming-kleicha-f7531f.netlify.app/
 
-Project Deploy🔗 Link : https://charming-kleicha-f7531f.netlify.app/
+<h3> About </h3>
 
+At cult.fit, we strive to keep you fit & healthy through a range of servises that includes fitness and yoga, healthy meals, mental wellbeing and primary health care. Become healthy from the safety of your homes with cult fit that helps you to #BeBetterEveryDay #WeAreCult 
 
+> In this project we have tried to clone frontend of cult.fit. Cart functinality has been added using browser's localstorage. Project design is responsive for all screen sizes. This project is an effort to implement learning at masai and improve our understanding of the web world.  Through this website we are trying to influence life style of millions by providing assistance in inproving your physical and mental health. Our fitness and eat page will give everything to keep you fit and care and mind page will help with mental and primary health care.
 
- We clone this website in 4 days with our team of 6 members. which includes:-
-
-🧑‍💻Project Contributers : 
-1. Aman Raj : https://github.com/ROY-AMAN
-2. Akshit Rana : https://github.com/Akshit3010
-3. Tapish Sharma : https://github.com/kakashi10-23
-4. Pratik Jawanjal : https://github.com/ImErPratik
-5. Ankit Sangwan : https://github.com/AnkitSangwan8282
-6. Gopi Reddy : https://github.com/GopiReddy1708
-  
+<hr>
+<h3> Tech Stack </h3>
  
- Thanks for your visit🤝
+ 
+<ol>
+ <li>HTML</li> 
+ <li>CSS</li> 
+ <li>Bootstrap</li> 
+ <li>JavaScript</li> 
+</ol>
+
+ <hr>
+ 
+ <h3>Features</h3>
+ 
+ 
+
+ <h3>Contributers </h3>
+ <ol>
+  
+<!--   <a href="www.linkedin.com/in/tapish23"> LinkedIn </a> </li> -->
+<!--   https://github.com/kakashi10-23 -->
+<!--   <li>Tapish Sharma: <a href="https://github.com/kakashi10-23"> Github </a>  <a href="www.linkedin.com/in/tapish23"> LinkedIn </a> </li> -->
+  
+  <li>Tapish Sharma: https://github.com/kakashi10-23 </li>
+  
+  <li>Akshit Rana:  https://github.com/Akshit3010 </li>
+   
+  <li>Aman Raj: https://github.com/ROY-AMAN </li>
+   
+  <li>Pratik Jawanjal: https://github.com/kakashi10-23 </li>
+   
+  <li>Ankit Sangwan: https://github.com/AnkitSangwan8282 </li>
+   
+  <li>Gopi Reddy:  https://github.com/GopiReddy1708 </li>
+
+ </ol>
+
